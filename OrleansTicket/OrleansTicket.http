@@ -1,0 +1,6 @@
+@OrleansTicket_HostAddress = http://localhost:5062
+
+GET {{OrleansTicket_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
