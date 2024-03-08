@@ -151,37 +151,44 @@ namespace OrleansTicket.Controllers
             {
                 return TypedResults.NotFound("User does not exist");
             }
-            //if (response is RespondSeatDoesNotExist)
-            //{
-            //    return TypedResults.NotFound("Seat does not exist");
-            //}
-            //if (response is ReservationDeclination)
-            //{
-            //    return TypedResults.BadRequest("Seat is already reserved");
-            //}
+            catch (SeatDoesNotExistException e)
+            {
+                return TypedResults.NotFound("Seat does not exist");
+            }
+            catch (ReservationDeclinedException e)
+            {
+                return TypedResults.BadRequest("Seat is already reserved");
+            }
         }
 
         [HttpDelete("reservations/{id}")]
         public async Task<Results<NotFound<string>, NoContent>> CancelReservation(string id)
         {
-            //var response = await _bridge.Ask<object>(new RequestCancelReservation(Guid.NewGuid().ToString(), id));
-            //if (response is RespondReservationDoesNotExist)
-            //{
-            //    return TypedResults.NotFound("Reservation does not exist");
-            //}
-            //return TypedResults.NoContent();
+            var reservationGrain = _grainFactory.GetGrain<IReservationGrain>(Guid.Parse(id));
+            try
+            {
+                await reservationGrain.CancelReservation();
+                return TypedResults.NoContent();
+            }
+            catch (ReservationDoesNotExistException e)
+            {
+                return TypedResults.NotFound("Reservation does not exist");
+            }
         }
 
         [HttpGet("reservations/{id}")]
         public async Task<Results<NotFound<string>, Ok<GetReservationDataDTO>>> GetReservation(string id)
         {
-            //var response = await _bridge.Ask<object>(new RequestReadReservationData(Guid.NewGuid().ToString(), id));
-            //if (response is RespondReservationDoesNotExist)
-            //{
-            //    return TypedResults.NotFound("Reservation does not exist");
-            //}
-            //RespondReservationData dataResponse = (RespondReservationData)response;
-            //return TypedResults.Ok(new GetReservationDataDTO(dataResponse.ReservationId, dataResponse.Status, dataResponse.EventId, dataResponse.SeatId));
+            var reservationGrain = _grainFactory.GetGrain<IReservationGrain>(Guid.Parse(id));
+            try
+            {
+                var reservationInfo = await reservationGrain.GetReservationInfo();
+                return TypedResults.Ok(new GetReservationDataDTO(reservationInfo.ReservationId.ToString(), reservationInfo.Status, reservationInfo.EventId, reservationInfo.SeatId));
+            }
+            catch(ReservationDoesNotExistException e)
+            {
+                return TypedResults.NotFound("Reservation does not exist");
+            }
         }
     }
 }

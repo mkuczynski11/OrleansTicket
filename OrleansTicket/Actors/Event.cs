@@ -1,4 +1,5 @@
-﻿using OrleansTicket.Exception;
+﻿using Orleans.Runtime;
+using OrleansTicket.Exception;
 using System;
 
 namespace OrleansTicket.Actors
@@ -83,7 +84,10 @@ namespace OrleansTicket.Actors
             Date = date;
             var availableSeats = _seatList.Where(seat => !_seatIdToReservation.ContainsKey(seat.Id)).ToList();
             var cheapestSeat = availableSeats.Min(seat => seat.Price);
-            //reservationActorToSeatId.Keys.ForEach(reservationActor => reservationActor.Tell(new EventChanged(requestChangeEventMsg.RequestId)));
+            foreach (var item in _seatIdToReservation)
+            {
+                item.Value.EventChangeAction();
+            }
             return Task.FromResult(new FullEventDetails(Name, Duration, Location, Date, Status, _seatList.Count, availableSeats.Count, availableSeats, cheapestSeat));
         }
 
@@ -95,7 +99,10 @@ namespace OrleansTicket.Actors
             }
 
             this.Status = EventStates.CANCELED;
-            //reservationActorToSeatId.Keys.ForEach(reservationActor => reservationActor.Tell(new EventCancelled(requestCancelEventMsg.RequestId)));
+            foreach (var item in _seatIdToReservation)
+            {
+                item.Value.EventCancelledAction();
+            }
             _seatIdToReservation.Clear();
             return Task.CompletedTask;
         }
@@ -107,40 +114,40 @@ namespace OrleansTicket.Actors
                 throw new EventDoesNotExistException();
             }
 
-            // TODO: Create reservation
-            if (_seatIdToReservation.ContainsKey(seatId))
+            if (_seatList.Select(seat => seat.Id.Equals(seatId)).Count() == 0)
             {
-                return false;
+                throw new SeatDoesNotExistException();
             }
 
+            if (_seatIdToReservation.ContainsKey(seatId))
+            {
+                return Task.FromResult(false);
+            }
 
-            //if (seatIdToReservationActor.ContainsKey(reservationRequestMsg.SeatId))
-            //{
-            //    Sender.Tell(new ReservationDeclination(reservationRequestMsg.RequestId));
-            //}
-            //else
-            //{
-            //    seatIdToReservationActor.Add(reservationRequestMsg.SeatId, reservationRequestMsg.ReservationActorRef);
-            //    reservationActorToSeatId.Add(reservationRequestMsg.ReservationActorRef, reservationRequestMsg.SeatId);
-            //    Context.Watch(reservationRequestMsg.ReservationActorRef);
-            //    Sender.Tell(new ReservationConfirmation(reservationRequestMsg.RequestId, reservationRequestMsg.SeatId));
-            //}
+            var reservationId = RequestContext.Get("ReservationId") as Guid?;
+            if (!reservationId.HasValue)
+            {
+                throw new InvalidCastException();
+            }
+
+            var reservationGrain = GrainFactory.GetGrain<IReservationGrain>(reservationId.Value);
+            _seatIdToReservation.Add(seatId, reservationGrain);
+            return Task.FromResult(true);
         }
 
-        public Task CancelReservation(Guid seatId)
+        public Task CancelReservation(string seatId)
         {
             if (!IsInitialized)
             {
                 throw new EventDoesNotExistException();
             }
 
-            // TODO: Cancel reservation
-            //if (reservationActorToSeatId.ContainsKey(Sender))
-            //{
-            //    var seatId = reservationActorToSeatId[Sender];
-            //    seatIdToReservationActor.Remove(seatId);
-            //    reservationActorToSeatId.Remove(Sender);
-            //}
+            if (_seatIdToReservation.ContainsKey(seatId))
+            {
+                _seatIdToReservation.Remove(seatId);
+            }
+
+            return Task.CompletedTask;
         }
     }
     public class Seat
