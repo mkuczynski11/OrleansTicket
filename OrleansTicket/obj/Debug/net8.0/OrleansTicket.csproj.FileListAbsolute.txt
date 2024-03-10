@@ -76,3 +76,7 @@ C:\Users\mkuczynski11\Desktop\magisterka\repos\OrleansTicket\OrleansTicket\obj\D
 C:\Users\mkuczynski11\Desktop\magisterka\repos\OrleansTicket\OrleansTicket\obj\Debug\net8.0\OrleansTicket.pdb
 C:\Users\mkuczynski11\Desktop\magisterka\repos\OrleansTicket\OrleansTicket\obj\Debug\net8.0\OrleansTicket.genruntimeconfig.cache
 C:\Users\mkuczynski11\Desktop\magisterka\repos\OrleansTicket\OrleansTicket\obj\Debug\net8.0\ref\OrleansTicket.dll
+C:\Users\mkuczynski11\Desktop\magisterka\repos\OrleansTicket\OrleansTicket\bin\Debug\net8.0\Orleans.Persistence.AdoNet.dll
+C:\Users\mkuczynski11\Desktop\magisterka\repos\OrleansTicket\OrleansTicket\bin\Debug\net8.0\Orleans.Reminders.dll
+C:\Users\mkuczynski11\Desktop\magisterka\repos\OrleansTicket\OrleansTicket\bin\Debug\net8.0\libman.json
+C:\Users\mkuczynski11\Desktop\magisterka\repos\OrleansTicket\OrleansTicket\bin\Debug\net8.0\Npgsql.dll
