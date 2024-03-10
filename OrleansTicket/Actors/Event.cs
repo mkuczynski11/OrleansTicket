@@ -37,6 +37,7 @@ namespace OrleansTicket.Actors
             Date = date;
             Status = EventStates.ACTIVE;
             seats.ForEach(seat => _seatList.Add(new Seat(Guid.NewGuid().ToString(), seat.Price)));
+            IsInitialized = true;
 
             return Task.FromResult(this.GetPrimaryKey());
         }
@@ -67,7 +68,7 @@ namespace OrleansTicket.Actors
             //return Task.FromResult(new FullEventDetails(Name, Duration, Location, Date, Status, _seatList.Count, availableSeats.Count, availableSeats, cheapestSeat));
             var availableSeats = _seatList.Where(seat => !_seatIdToReservation.ContainsKey(seat.Id)).ToList();
             // TODO: Fix in akka
-            var cheapestSeat = availableSeats.Min(seat => seat.Price);
+            var cheapestSeat = availableSeats.Count > 0 ? availableSeats.Min(seat => seat.Price) : 0;
             return Task.FromResult(new FullEventDetails(Name, Duration, Location, Date, Status, _seatList.Count, availableSeats.Count, availableSeats, cheapestSeat));
         }
 
@@ -114,7 +115,7 @@ namespace OrleansTicket.Actors
                 throw new EventDoesNotExistException();
             }
 
-            if (_seatList.Select(seat => seat.Id.Equals(seatId)).Count() == 0)
+            if (_seatList.Find(seat => seat.Id.Equals(seatId)) == null)
             {
                 throw new SeatDoesNotExistException();
             }
@@ -150,6 +151,7 @@ namespace OrleansTicket.Actors
             return Task.CompletedTask;
         }
     }
+    [GenerateSerializer, Alias(nameof(Seat))]
     public class Seat
     {
         public Seat(string id, double price)
@@ -157,17 +159,24 @@ namespace OrleansTicket.Actors
             Id = id;
             Price = price;
         }
+
+        [Id(0)]
         public string Id { get; set; }
+        [Id(1)]
         public double Price { get; set; }
     }
+    [GenerateSerializer, Alias(nameof(CreateSeatData))]
     public class CreateSeatData
     {
         public CreateSeatData(double price)
         {
             Price = price;
         }
+
+        [Id(0)]
         public double Price { get; set; }
     }
+    [GenerateSerializer, Alias(nameof(EventDetails))]
     public class EventDetails
     {
         public EventDetails(string name, double duration, string location, DateTime date, string status, int seatsAmount, int availableSeatsAmount, List<Seat> availableSeats)
@@ -181,21 +190,33 @@ namespace OrleansTicket.Actors
             AvailableSeatsAmount = availableSeatsAmount;
             AvailableSeats = availableSeats;
         }
+
+        [Id(0)]
         public string Name { get; }
+        [Id(1)]
         public double Duration { get; }
+        [Id(2)]
         public string Location { get; }
+        [Id(3)]
         public DateTime Date { get;}
+        [Id(4)]
         public string Status { get; }
+        [Id(5)]
         public int SeatsAmount { get; }
+        [Id(6)]
         public int AvailableSeatsAmount { get; }
+        [Id(7)]
         public List<Seat> AvailableSeats { get; }
     }
+    [GenerateSerializer, Alias(nameof(FullEventDetails))]
     public class FullEventDetails : EventDetails
     {
         public FullEventDetails(string name, double duration, string location, DateTime date, string status, int seatsAmount, int availableSeatsAmount, List<Seat> availableSeats, double cheapestSeat): base(name, duration, location, date, status, seatsAmount, availableSeatsAmount, availableSeats)
         {
             CheapestSeat = cheapestSeat;
         }
+
+        [Id(8)]
         public double CheapestSeat { get; }
     }
     public static class EventStates

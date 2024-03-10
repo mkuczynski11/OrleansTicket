@@ -27,7 +27,7 @@ namespace OrleansTicket.Controllers
             try
             {
                 var userInfo = await userGrain.GetUserInfo();
-                return TypedResults.Ok(new GetUserDataDTO(userGrain.GetPrimaryKeyString(), userInfo.Name, userInfo.Surname, userInfo.Reservations));
+                return TypedResults.Ok(new GetUserDataDTO(userGrain.GetPrimaryKeyString(), userInfo.UserDetails.Name, userInfo.UserDetails.Surname, userInfo.Reservations));
             }
             catch (UserDoesNotExistException e) 
             {
@@ -128,6 +128,8 @@ namespace OrleansTicket.Controllers
             //RespondEventsData response = await _bridge.Ask<RespondEventsData>(new RequestReadEvents(Guid.NewGuid().ToString(), name));
             //List<GetEventsDataDTO.EventDTO> events = response.Events.Select(x => new GetEventsDataDTO.EventDTO(x.Id, x.Name)).ToList();
             //return TypedResults.Ok(new GetEventsDataDTO(events));
+
+            return TypedResults.Ok(new GetEventsDataDTO(new List<GetEventsDataDTO.EventDTO>()));
         }
 
         [HttpPost("events/{eventId}/seats/{seatId}")]

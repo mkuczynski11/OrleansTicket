@@ -21,7 +21,6 @@ namespace OrleansTicket.Actors
         private bool IsInitialized { get; set; } = false;
         public async Task<Guid> ReserveSeat(string eventId, string seatId, string email)
         {
-            IsInitialized = true;
             if (!Status.Equals(ReservationStates.CREATED))
             {
                 throw new ReservationExistsException();
@@ -45,6 +44,8 @@ namespace OrleansTicket.Actors
 
             Status = ReservationStates.ACTIVE;
             SeatId = seatId;
+            IsInitialized = true;
+            await User.AddReservation(this.GetPrimaryKeyString());
             return this.GetPrimaryKey();
         }
 
@@ -79,6 +80,7 @@ namespace OrleansTicket.Actors
             return Task.CompletedTask;
         }
     }
+    [GenerateSerializer, Alias(nameof(ReservationDetails))]
     public class ReservationDetails
     {
         public ReservationDetails(Guid reservationId, string status, string eventId, string seatId)
@@ -88,9 +90,14 @@ namespace OrleansTicket.Actors
             EventId = eventId;
             SeatId = seatId;
         }
+
+        [Id(0)]
         public Guid ReservationId { get; }
+        [Id(1)]
         public string Status { get; }
+        [Id(2)]
         public string EventId { get; }
+        [Id(3)]
         public string SeatId { get; }
     }
     public static class ReservationStates

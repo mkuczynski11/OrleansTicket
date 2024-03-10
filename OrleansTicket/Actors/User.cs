@@ -10,12 +10,13 @@ namespace OrleansTicket.Actors
         Task<string> InitializeUser(string name, string surname);
         Task UpdateUserInfo(string name, string surname);
         Task AddReservation(string reservationId);
-        Task<UserDetails> GetUserInfo();
+        Task<FullUserDetails> GetUserInfo();
         Task<bool> IsInitialized();
     }
     public sealed class UserGrain(
         [PersistentState(stateName: "user", storageName: "users")] IPersistentState<UserDetails> state): Grain, IUserGrain
     {
+        private List<string> Reservations { get; set; } = new();
         public async Task<string> InitializeUser(string name, string surname)
         {
             if (state.State.IsInitialized)
@@ -27,7 +28,6 @@ namespace OrleansTicket.Actors
             {
                 Name = name,
                 Surname = surname,
-                Reservations = new(),
                 IsInitialized = true
             };
 
@@ -54,19 +54,19 @@ namespace OrleansTicket.Actors
                 throw new UserDoesNotExistException();
             }
 
-            state.State.Reservations.Add(reservationId);
+            this.Reservations.Add(reservationId);
 
             await state.WriteStateAsync();
         }
 
-        public Task<UserDetails> GetUserInfo()
+        public Task<FullUserDetails> GetUserInfo()
         {
             if (!state.State.IsInitialized)
             {
                 throw new UserDoesNotExistException();
             }
 
-            return Task.FromResult(state.State);
+            return Task.FromResult(new FullUserDetails(state.State, Reservations));
         }
 
         public Task<bool> IsInitialized()
@@ -83,8 +83,19 @@ namespace OrleansTicket.Actors
         [Id(1)]
         public string Surname { get; set; } = "";
         [Id(2)]
-        public List<string> Reservations { get; set; } = new();
-        [Id(3)]
         public bool IsInitialized { get; set; } = false;
+    }
+    [GenerateSerializer, Alias(nameof(FullUserDetails))]
+    public sealed record class FullUserDetails
+    {
+        public FullUserDetails(UserDetails userDetails, List<string> reservations)
+        {
+            UserDetails = userDetails;
+            Reservations = reservations;
+        }
+        [Id(0)]
+        public UserDetails UserDetails { get; set; }
+        [Id(1)]
+        public List<string> Reservations { get; set; } = new();
     }
 }
