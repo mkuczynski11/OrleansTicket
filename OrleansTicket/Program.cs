@@ -11,6 +11,7 @@ builder.Services.AddSwaggerGen();
 
 builder.Host.UseOrleans(static siloBuilder =>
 {
+    // Change port when running other silo
     siloBuilder.UseLocalhostClustering(siloPort: 11111, gatewayPort: 30000);
     siloBuilder.Configure<ClusterOptions>(options =>
     {
