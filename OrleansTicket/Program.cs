@@ -1,4 +1,4 @@
-using OrleansTicket.Actors;
+using Orleans.Configuration;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -11,7 +11,19 @@ builder.Services.AddSwaggerGen();
 
 builder.Host.UseOrleans(static siloBuilder =>
 {
-    siloBuilder.UseLocalhostClustering();
+    siloBuilder.UseLocalhostClustering(siloPort: 11111, gatewayPort: 30000);
+    siloBuilder.Configure<ClusterOptions>(options =>
+    {
+        options.ClusterId = "Cluster1";
+        options.ServiceId = "Ticketing";
+    });
+    siloBuilder.UseAdoNetClustering(options =>
+    {
+        // RUN THIS https://github.com/dotnet/orleans/blob/main/src/AdoNet/Shared/PostgreSQL-Main.sql
+        // RUN THIS https://github.com/dotnet/orleans/blob/main/src/AdoNet/Orleans.Persistence.AdoNet/PostgreSQL-Persistence.sql
+        options.Invariant = "Npgsql";
+        options.ConnectionString = "Server=localhost;Port=5432;Database=postgres;User Id=postgres;Password=admin;";
+    });
     //// Option without database
     //siloBuilder.AddMemoryGrainStorage("users");
     // Option with postgresql connection on localhost:5432 for user=postgres and password=admin to db=postgres

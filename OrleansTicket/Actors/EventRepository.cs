@@ -5,7 +5,6 @@
         Task AddEvent(Guid eventId);
         Task<Dictionary<Guid, IEventGrain>> GetEvents();
     }
-    // TODO: Check in cluster deployment
     /// <summary>
     /// EventRepository grain responsible for aggregating all events data in a system.
     /// </summary>

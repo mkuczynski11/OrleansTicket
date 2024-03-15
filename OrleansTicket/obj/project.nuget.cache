@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "VhjV6OOKSsj5soGpcAOHJg0FJEKXCV3GiqeFPByiAROtianpAkpfvr/GXpmjE+ufpWGRSaC43sm8DUtB9HOgBg==",
+  "dgSpecHash": "HnBsBA4D7SbUfxMJNBlesMSY8scRSpVzP+DYgJy2PLbB6+j9yiKieH0oneiFZXNGIhEeBlR848BqVNxqrFlxgA==",
   "success": true,
   "projectFilePath": "C:\\Users\\mkuczynski11\\Desktop\\magisterka\\repos\\OrleansTicket\\OrleansTicket\\OrleansTicket.csproj",
   "expectedPackageFiles": [
@@ -43,6 +43,7 @@
     "C:\\Users\\mkuczynski11\\.nuget\\packages\\microsoft.extensions.primitives\\8.0.0\\microsoft.extensions.primitives.8.0.0.nupkg.sha512",
     "C:\\Users\\mkuczynski11\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
     "C:\\Users\\mkuczynski11\\.nuget\\packages\\microsoft.orleans.analyzers\\8.0.0\\microsoft.orleans.analyzers.8.0.0.nupkg.sha512",
+    "C:\\Users\\mkuczynski11\\.nuget\\packages\\microsoft.orleans.clustering.adonet\\8.0.0\\microsoft.orleans.clustering.adonet.8.0.0.nupkg.sha512",
     "C:\\Users\\mkuczynski11\\.nuget\\packages\\microsoft.orleans.codegenerator\\8.0.0\\microsoft.orleans.codegenerator.8.0.0.nupkg.sha512",
     "C:\\Users\\mkuczynski11\\.nuget\\packages\\microsoft.orleans.core\\8.0.0\\microsoft.orleans.core.8.0.0.nupkg.sha512",
     "C:\\Users\\mkuczynski11\\.nuget\\packages\\microsoft.orleans.core.abstractions\\8.0.0\\microsoft.orleans.core.abstractions.8.0.0.nupkg.sha512",

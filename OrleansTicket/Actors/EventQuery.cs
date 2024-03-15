@@ -14,6 +14,7 @@ namespace OrleansTicket.Actors
         // TODO: Add retry mechanism
         public async Task<List<MinimalEventData>> GetAllEvents(string name)
         {
+            Console.WriteLine("Starting to query events!");
             name = name == null ? string.Empty : name;
             var eventRepository = GrainFactory.GetGrain<IEventRepositoryGrain>(Guid.Empty);
             var events = await eventRepository.GetEvents();

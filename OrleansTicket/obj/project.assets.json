@@ -827,6 +827,22 @@
       "Microsoft.Orleans.Analyzers/8.0.0": {
         "type": "package"
       },
+      "Microsoft.Orleans.Clustering.AdoNet/8.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Orleans.Runtime": "8.0.0"
+        },
+        "compile": {
+          "lib/net8.0/Orleans.Clustering.AdoNet.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/Orleans.Clustering.AdoNet.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Microsoft.Orleans.CodeGenerator/8.0.0": {
         "type": "package",
         "build": {
@@ -3416,6 +3432,20 @@
         "microsoft.orleans.analyzers.nuspec"
       ]
     },
+    "Microsoft.Orleans.Clustering.AdoNet/8.0.0": {
+      "sha512": "HH95pyC3N4v/DzYzGs+gkcEfWGzVMUtR+VDCcBAa8VQfFiOWdwvR4tUU69l7Sz8zD6QcwveXQQn6S6F2LgHDVQ==",
+      "type": "package",
+      "path": "microsoft.orleans.clustering.adonet/8.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net8.0/Orleans.Clustering.AdoNet.dll",
+        "lib/net8.0/Orleans.Clustering.AdoNet.xml",
+        "logo_128.png",
+        "microsoft.orleans.clustering.adonet.8.0.0.nupkg.sha512",
+        "microsoft.orleans.clustering.adonet.nuspec"
+      ]
+    },
     "Microsoft.Orleans.CodeGenerator/8.0.0": {
       "sha512": "XcTo8gLrAk2CHusXkzWpQEh/HlJSp6uX6cU/ln+TGMxRxy+PNRVRuPz0HDmgOGyLx9FJztDNCHUln7CEJ6VvMg==",
       "type": "package",
@@ -4244,6 +4274,7 @@
   },
   "projectFileDependencyGroups": {
     "net8.0": [
+      "Microsoft.Orleans.Clustering.AdoNet >= 8.0.0",
       "Microsoft.Orleans.Persistence.AdoNet >= 8.0.0",
       "Microsoft.Orleans.Server >= 8.0.0",
       "Npgsql >= 8.0.2",
@@ -4289,6 +4320,10 @@
       "net8.0": {
         "targetAlias": "net8.0",
         "dependencies": {
+          "Microsoft.Orleans.Clustering.AdoNet": {
+            "target": "Package",
+            "version": "[8.0.0, )"
+          },
           "Microsoft.Orleans.Persistence.AdoNet": {
             "target": "Package",
             "version": "[8.0.0, )"
