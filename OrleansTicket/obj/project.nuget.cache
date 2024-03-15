@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Tx5z4w8H/1v1vMBIgk3XvvgjiFT9lxWOBvAj1UQ7UURKQVJzxEV8InUxRhF5V8IfOuRSiY/gF6p0VyaqaXDp7A==",
+  "dgSpecHash": "lrelcd7QTjdvTcIus8dNyXkQsIJ7RhfvX3RVdfTCdKSKrZJ3r+RokaN7ragUtS/m7UUWjyAb+xvuQDmDRtm/FQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\mkuczynski11\\Desktop\\magisterka\\repos\\OrleansTicket\\OrleansTicket\\OrleansTicket.csproj",
+  "projectFilePath": "C:\\Users\\mkuczynski11\\Desktop\\magisterka\\repos\\OrleansTicket2\\OrleansTicket\\OrleansTicket\\OrleansTicket.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\mkuczynski11\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\mkuczynski11\\.nuget\\packages\\microsoft.aspnetcore.connections.abstractions\\8.0.0\\microsoft.aspnetcore.connections.abstractions.8.0.0.nupkg.sha512",

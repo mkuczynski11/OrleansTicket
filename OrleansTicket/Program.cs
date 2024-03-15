@@ -11,7 +11,7 @@ builder.Services.AddSwaggerGen();
 
 builder.Host.UseOrleans(static siloBuilder =>
 {
-    siloBuilder.UseLocalhostClustering(siloPort: 11111, gatewayPort: 30000);
+    siloBuilder.UseLocalhostClustering(siloPort: 11112, gatewayPort: 30001);
     siloBuilder.Configure<ClusterOptions>(options =>
     {
         options.ClusterId = "Cluster1";
