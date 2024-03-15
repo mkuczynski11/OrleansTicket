@@ -1,4 +1,5 @@
-﻿using System.Reflection;
+﻿using OrleansTicket.Exception;
+using System.Reflection;
 
 namespace OrleansTicket.Actors
 {
@@ -11,8 +12,28 @@ namespace OrleansTicket.Actors
     /// </summary>
     public class EventQuery : Grain, IEventQueryGrain
     {
-        // TODO: Add retry mechanism
+        private static double ExternalCallSimulationFailProbability = 0.5f;
+        private static int MaxRetries = 5;
         public async Task<List<MinimalEventData>> GetAllEvents(string name)
+        {
+            int retries = 0;
+            while (retries < MaxRetries)
+            {
+                try
+                {
+                    return await this.GetEvents(name);
+                }
+                catch (NoConnectionException)
+                {
+                    Console.WriteLine("Error fetching events. Retrying");
+                    retries++;
+                }
+            }
+
+            throw new System.Exception("Failed to fetch events!!!");
+
+        }
+        private async Task<List<MinimalEventData>> GetEvents(string name)
         {
             Console.WriteLine("Starting to query events!");
             name = name == null ? string.Empty : name;
@@ -26,7 +47,7 @@ namespace OrleansTicket.Actors
 
             List<MinimalEventData> result = new();
 
-            while(tasks.Count > 1)
+            while (tasks.Count > 1)
             {
                 var completed = await Task.WhenAny(tasks);
                 if (completed is Task<MinimalEventData> completedEventTask)
@@ -41,6 +62,12 @@ namespace OrleansTicket.Actors
                 tasks.Remove(completed);
             }
 
+            Random rnd = new Random();
+            if (rnd.NextDouble() < ExternalCallSimulationFailProbability)
+            {
+                Console.WriteLine("EventQuery failed because of external call error");
+                throw new NoConnectionException();
+            }
             return result.Where(x => x.Name != null && x.Name.ToLower().StartsWith(name.ToLower())).ToList();
         }
     }
