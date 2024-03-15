@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "HnBsBA4D7SbUfxMJNBlesMSY8scRSpVzP+DYgJy2PLbB6+j9yiKieH0oneiFZXNGIhEeBlR848BqVNxqrFlxgA==",
+  "dgSpecHash": "Tx5z4w8H/1v1vMBIgk3XvvgjiFT9lxWOBvAj1UQ7UURKQVJzxEV8InUxRhF5V8IfOuRSiY/gF6p0VyaqaXDp7A==",
   "success": true,
   "projectFilePath": "C:\\Users\\mkuczynski11\\Desktop\\magisterka\\repos\\OrleansTicket\\OrleansTicket\\OrleansTicket.csproj",
   "expectedPackageFiles": [
@@ -57,6 +57,11 @@
     "C:\\Users\\mkuczynski11\\.nuget\\packages\\microsoft.orleans.server\\8.0.0\\microsoft.orleans.server.8.0.0.nupkg.sha512",
     "C:\\Users\\mkuczynski11\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
     "C:\\Users\\mkuczynski11\\.nuget\\packages\\npgsql\\8.0.2\\npgsql.8.0.2.nupkg.sha512",
+    "C:\\Users\\mkuczynski11\\.nuget\\packages\\opentelemetry\\1.7.0\\opentelemetry.1.7.0.nupkg.sha512",
+    "C:\\Users\\mkuczynski11\\.nuget\\packages\\opentelemetry.api\\1.7.0\\opentelemetry.api.1.7.0.nupkg.sha512",
+    "C:\\Users\\mkuczynski11\\.nuget\\packages\\opentelemetry.api.providerbuilderextensions\\1.7.0\\opentelemetry.api.providerbuilderextensions.1.7.0.nupkg.sha512",
+    "C:\\Users\\mkuczynski11\\.nuget\\packages\\orleansdashboard\\8.0.0\\orleansdashboard.8.0.0.nupkg.sha512",
+    "C:\\Users\\mkuczynski11\\.nuget\\packages\\orleansdashboard.core\\8.0.0\\orleansdashboard.core.8.0.0.nupkg.sha512",
     "C:\\Users\\mkuczynski11\\.nuget\\packages\\swashbuckle.aspnetcore\\6.4.0\\swashbuckle.aspnetcore.6.4.0.nupkg.sha512",
     "C:\\Users\\mkuczynski11\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.4.0\\swashbuckle.aspnetcore.swagger.6.4.0.nupkg.sha512",
     "C:\\Users\\mkuczynski11\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.4.0\\swashbuckle.aspnetcore.swaggergen.6.4.0.nupkg.sha512",

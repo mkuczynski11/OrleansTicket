@@ -8,9 +8,11 @@
     ".NETCoreApp,Version=v8.0": {
       "OrleansTicket/1.0.0": {
         "dependencies": {
+          "Microsoft.Orleans.Clustering.AdoNet": "8.0.0",
           "Microsoft.Orleans.Persistence.AdoNet": "8.0.0",
           "Microsoft.Orleans.Server": "8.0.0",
           "Npgsql": "8.0.2",
+          "OrleansDashboard": "8.0.0",
           "Swashbuckle.AspNetCore": "6.4.0"
         },
         "runtime": {
@@ -374,6 +376,17 @@
         }
       },
       "Microsoft.Orleans.Analyzers/8.0.0": {},
+      "Microsoft.Orleans.Clustering.AdoNet/8.0.0": {
+        "dependencies": {
+          "Microsoft.Orleans.Runtime": "8.0.0"
+        },
+        "runtime": {
+          "lib/net8.0/Orleans.Clustering.AdoNet.dll": {
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.0.0.0"
+          }
+        }
+      },
       "Microsoft.Orleans.CodeGenerator/8.0.0": {},
       "Microsoft.Orleans.Core/8.0.0": {
         "dependencies": {
@@ -513,6 +526,68 @@
           "lib/net8.0/Npgsql.dll": {
             "assemblyVersion": "8.0.2.0",
             "fileVersion": "8.0.2.0"
+          }
+        }
+      },
+      "OpenTelemetry/1.7.0": {
+        "dependencies": {
+          "Microsoft.Extensions.Logging": "8.0.0",
+          "Microsoft.Extensions.Logging.Configuration": "8.0.0",
+          "OpenTelemetry.Api.ProviderBuilderExtensions": "1.7.0"
+        },
+        "runtime": {
+          "lib/net8.0/OpenTelemetry.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.7.0.1106"
+          }
+        }
+      },
+      "OpenTelemetry.Api/1.7.0": {
+        "dependencies": {
+          "System.Diagnostics.DiagnosticSource": "8.0.0"
+        },
+        "runtime": {
+          "lib/net8.0/OpenTelemetry.Api.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.7.0.1106"
+          }
+        }
+      },
+      "OpenTelemetry.Api.ProviderBuilderExtensions/1.7.0": {
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "8.0.0",
+          "OpenTelemetry.Api": "1.7.0"
+        },
+        "runtime": {
+          "lib/net8.0/OpenTelemetry.Api.ProviderBuilderExtensions.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.7.0.1106"
+          }
+        }
+      },
+      "OrleansDashboard/8.0.0": {
+        "dependencies": {
+          "Microsoft.Orleans.Reminders": "8.0.0",
+          "Microsoft.Orleans.Sdk": "8.0.0",
+          "OpenTelemetry": "1.7.0",
+          "OrleansDashboard.Core": "8.0.0"
+        },
+        "runtime": {
+          "lib/net8.0/OrleansDashboard.dll": {
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.0.0.0"
+          }
+        }
+      },
+      "OrleansDashboard.Core/8.0.0": {
+        "dependencies": {
+          "Microsoft.Orleans.Runtime": "8.0.0",
+          "Microsoft.Orleans.Sdk": "8.0.0"
+        },
+        "runtime": {
+          "lib/net8.0/OrleansDashboard.Core.dll": {
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.0.0.0"
           }
         }
       },
@@ -931,6 +1006,13 @@
       "path": "microsoft.orleans.analyzers/8.0.0",
       "hashPath": "microsoft.orleans.analyzers.8.0.0.nupkg.sha512"
     },
+    "Microsoft.Orleans.Clustering.AdoNet/8.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-HH95pyC3N4v/DzYzGs+gkcEfWGzVMUtR+VDCcBAa8VQfFiOWdwvR4tUU69l7Sz8zD6QcwveXQQn6S6F2LgHDVQ==",
+      "path": "microsoft.orleans.clustering.adonet/8.0.0",
+      "hashPath": "microsoft.orleans.clustering.adonet.8.0.0.nupkg.sha512"
+    },
     "Microsoft.Orleans.CodeGenerator/8.0.0": {
       "type": "package",
       "serviceable": true,
@@ -1021,6 +1103,41 @@
       "sha512": "sha512-MuJzLoWCaQhQAR3oh66YR0Ir6mxuezncGX3f8wxvAc21g0+9HICktJQlqMoODhxztZKXE5k9GxRxqUAN+vPb4g==",
       "path": "npgsql/8.0.2",
       "hashPath": "npgsql.8.0.2.nupkg.sha512"
+    },
+    "OpenTelemetry/1.7.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-HNmOJg++4FtEJGCIn1dCJcDkHRLNuLKU047owrGXUOfz/C/c5oZHOPKrowKVOy2jOOh/F9+HDshzeOk5NnQEZg==",
+      "path": "opentelemetry/1.7.0",
+      "hashPath": "opentelemetry.1.7.0.nupkg.sha512"
+    },
+    "OpenTelemetry.Api/1.7.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-w5uDHl1Nm7R5igWu1QjewpdPzJSavua8NTI3+iThOdRNHD3cabox8JeIJ8LpBSXGHARSNFMJZ/Xr5EGRinMTMg==",
+      "path": "opentelemetry.api/1.7.0",
+      "hashPath": "opentelemetry.api.1.7.0.nupkg.sha512"
+    },
+    "OpenTelemetry.Api.ProviderBuilderExtensions/1.7.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-fHLmJcRJk1dAwddjBgvqi/Grmr04hPo1DoFwTa6hxtSvAFOXPU56Xe9Sh2VXqz6Gstzp6TCju8z0Sob1t7BzSg==",
+      "path": "opentelemetry.api.providerbuilderextensions/1.7.0",
+      "hashPath": "opentelemetry.api.providerbuilderextensions.1.7.0.nupkg.sha512"
+    },
+    "OrleansDashboard/8.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-+5USZK1WFcbYYtyuK34ge0iA2h4Gg5qFORAw794Fw6Fq91ZlPhC30fkzf0pjMH4Kv8h4eELCte1BxOIVa4I4CA==",
+      "path": "orleansdashboard/8.0.0",
+      "hashPath": "orleansdashboard.8.0.0.nupkg.sha512"
+    },
+    "OrleansDashboard.Core/8.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-PwRSUMFZZQOVLW5RtW66EQjb1HFDH7trNM9lv3DqQf98V8qO7y+15qmj7VyaJLLyhotvQrUOr8S9ktNXzFJ5pA==",
+      "path": "orleansdashboard.core/8.0.0",
+      "hashPath": "orleansdashboard.core.8.0.0.nupkg.sha512"
     },
     "Swashbuckle.AspNetCore/6.4.0": {
       "type": "package",

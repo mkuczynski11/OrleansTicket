@@ -17,16 +17,18 @@ builder.Host.UseOrleans(static siloBuilder =>
         options.ClusterId = "Cluster1";
         options.ServiceId = "Ticketing";
     });
+    // Configure silo to work on cluster with postgresql database
     siloBuilder.UseAdoNetClustering(options =>
     {
         // RUN THIS https://github.com/dotnet/orleans/blob/main/src/AdoNet/Shared/PostgreSQL-Main.sql
-        // RUN THIS https://github.com/dotnet/orleans/blob/main/src/AdoNet/Orleans.Persistence.AdoNet/PostgreSQL-Persistence.sql
+        // RUN THIS https://github.com/dotnet/orleans/blob/main/src/AdoNet/Orleans.Clustering.AdoNet/PostgreSQL-Clustering.sql
+        // RUN THIS https://github.com/dotnet/orleans/blob/main/src/AdoNet/Orleans.Clustering.AdoNet/Migrations/PostgreSQL-Clustering-3.7.0.sql
         options.Invariant = "Npgsql";
         options.ConnectionString = "Server=localhost;Port=5432;Database=postgres;User Id=postgres;Password=admin;";
     });
-    //// Option without database
+    //// Option to set up storage for grain without database
     //siloBuilder.AddMemoryGrainStorage("users");
-    // Option with postgresql connection on localhost:5432 for user=postgres and password=admin to db=postgres
+    // Option to set up storage for grain with postgresql connection on localhost:5432 for user=postgres and password=admin to db=postgres
     // You must create database and run 2 scripts provided below in order to initialize db proprely for Orleans
     siloBuilder.AddAdoNetGrainStorage("users", options =>
     {
@@ -35,6 +37,7 @@ builder.Host.UseOrleans(static siloBuilder =>
         options.Invariant = "Npgsql";
         options.ConnectionString = "Server=localhost;Port=5432;Database=postgres;User Id=postgres;Password=admin;";
     });
+    siloBuilder.UseDashboard(options => { });
 });
 
 var app = builder.Build();
