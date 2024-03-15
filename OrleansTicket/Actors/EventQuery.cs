@@ -36,6 +36,13 @@ namespace OrleansTicket.Actors
         private async Task<List<MinimalEventData>> GetEvents(string name)
         {
             Console.WriteLine("Starting to query events!");
+            Random rnd = new Random();
+            if (rnd.NextDouble() < ExternalCallSimulationFailProbability)
+            {
+                Console.WriteLine("EventQuery failed because of external call error");
+                throw new NoConnectionException();
+            }
+
             name = name == null ? string.Empty : name;
             var eventRepository = GrainFactory.GetGrain<IEventRepositoryGrain>(Guid.Empty);
             var events = await eventRepository.GetEvents();
@@ -62,12 +69,6 @@ namespace OrleansTicket.Actors
                 tasks.Remove(completed);
             }
 
-            Random rnd = new Random();
-            if (rnd.NextDouble() < ExternalCallSimulationFailProbability)
-            {
-                Console.WriteLine("EventQuery failed because of external call error");
-                throw new NoConnectionException();
-            }
             return result.Where(x => x.Name != null && x.Name.ToLower().StartsWith(name.ToLower())).ToList();
         }
     }

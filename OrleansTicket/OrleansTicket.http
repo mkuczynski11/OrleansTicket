@@ -1,6 +1,22 @@
-@OrleansTicket_HostAddress = http://localhost:5062
+@OrleansTicket_HostAddress = http://localhost:5210
 
-GET {{OrleansTicket_HostAddress}}/weatherforecast/
-Accept: application/json
+POST {{OrleansTicket_HostAddress}}/api/events
+Content-Type: application/json
+
+{
+  "name": "asd",
+  "duration": 0,
+  "location": "string",
+  "date": "2024-03-15T10:27:27.017Z",
+  "seats": [
+    {
+      "price": 20
+    }
+  ]
+}
+
+###
+
+GET {{OrleansTicket_HostAddress}}/api/events/f32e7433-2812-496e-97ab-168df4bef0b9?currency=EUR
 
 ###

@@ -29,6 +29,8 @@ namespace OrleansTicket.Actors
         private string Status { get; set; } = "";
         private List<Seat> _seatList = new();
         private Dictionary<string, IReservationGrain> _seatIdToReservation = new();
+        private static int FetchSimulationDelayMs = 2000;
+        private static double FetchSimulationProbability = 0.1f;
         public Task<Guid> InitializeEvent(string name, double duration, string location, DateTime date, List<CreateSeatData> seats)
         {
             if (IsInitialized)
@@ -60,14 +62,20 @@ namespace OrleansTicket.Actors
             return Task.FromResult(new EventDetails(Name, Duration, Location, Date, Status, _seatList.Count, availableSeats.Count, availableSeats));
         }
 
-        public Task<MinimalEventData> GetMinimalInfo()
+        public async Task<MinimalEventData> GetMinimalInfo()
         {
             if (!IsInitialized)
             {
                 throw new EventDoesNotExistException();
             }
 
-            return Task.FromResult(new MinimalEventData(this.GetPrimaryKeyString(), Name));
+            Random rnd = new Random();
+            if (rnd.NextDouble() < FetchSimulationProbability)
+            {
+                await Task.Delay(FetchSimulationDelayMs);
+            }
+
+            return new MinimalEventData(this.GetPrimaryKeyString(), Name);
         }
 
         public async Task<FullEventDetails> GetFullEventInfo(string currency)

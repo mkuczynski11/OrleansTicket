@@ -13,6 +13,7 @@ namespace OrleansTicket.Actors
     [StatelessWorker(maxLocalWorkers: 3)]
     public class ExchangeCurrency : Grain, IExchangeCurrencyGrain
     {
+        private static bool ShouldDelay = true;
         private double CurrencyRate(string currency)
         {
             switch (currency)
@@ -27,9 +28,14 @@ namespace OrleansTicket.Actors
                     throw new ArgumentException();
             }
         }
-        public Task<double> Exchange(double amount, string fromCurrency)
+        public async Task<double> Exchange(double amount, string fromCurrency)
         {
-            return Task.FromResult(amount * CurrencyRate(fromCurrency));
+            if (ShouldDelay)
+            {
+                Console.WriteLine("Creating delay of 5 seconds");
+                await Task.Delay(5000);
+            }
+            return amount * CurrencyRate(fromCurrency);
         }
     }
 }
