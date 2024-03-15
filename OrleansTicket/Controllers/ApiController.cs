@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
 using OrleansTicket.Actors;
 using OrleansTicket.DTO;
 using OrleansTicket.Exception;
@@ -125,11 +126,11 @@ namespace OrleansTicket.Controllers
         [HttpGet("events")]
         public async Task<Ok<GetEventsDataDTO>> GetEvents(string? name)
         {
-            //RespondEventsData response = await _bridge.Ask<RespondEventsData>(new RequestReadEvents(Guid.NewGuid().ToString(), name));
-            //List<GetEventsDataDTO.EventDTO> events = response.Events.Select(x => new GetEventsDataDTO.EventDTO(x.Id, x.Name)).ToList();
-            //return TypedResults.Ok(new GetEventsDataDTO(events));
+            var eventQueryGrain = _grainFactory.GetGrain<IEventQueryGrain>(Guid.NewGuid());
+            var eventInfos = await eventQueryGrain.GetAllEvents(name);
+            var eventList = eventInfos.Select(x => new GetEventsDataDTO.EventDTO(x.Id, x.Name)).ToList();
 
-            return TypedResults.Ok(new GetEventsDataDTO(new List<GetEventsDataDTO.EventDTO>()));
+            return TypedResults.Ok(new GetEventsDataDTO(eventList));
         }
 
         [HttpPost("events/{eventId}/seats/{seatId}")]

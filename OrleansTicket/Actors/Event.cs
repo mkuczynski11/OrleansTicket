@@ -10,6 +10,7 @@ namespace OrleansTicket.Actors
         Task<FullEventDetails> UpdateEventInfo(string name, double duration, string location, DateTime date);
         Task<EventDetails> GetEventInfo();
         Task<FullEventDetails> GetFullEventInfo();
+        Task<MinimalEventData> GetMinimalInfo();
         Task CancelEvent();
         Task<bool> CreateReservation(string seatId);
         Task CancelReservation(string seatId);
@@ -38,6 +39,8 @@ namespace OrleansTicket.Actors
             Status = EventStates.ACTIVE;
             seats.ForEach(seat => _seatList.Add(new Seat(Guid.NewGuid().ToString(), seat.Price)));
             IsInitialized = true;
+            var eventRepository = GrainFactory.GetGrain<IEventRepositoryGrain>(Guid.Empty);
+            eventRepository.AddEvent(this.GetPrimaryKey());
 
             return Task.FromResult(this.GetPrimaryKey());
         }
@@ -51,6 +54,16 @@ namespace OrleansTicket.Actors
 
             var availableSeats = _seatList.Where(seat => !_seatIdToReservation.ContainsKey(seat.Id)).ToList();
             return Task.FromResult(new EventDetails(Name, Duration, Location, Date, Status, _seatList.Count, availableSeats.Count, availableSeats));
+        }
+
+        public Task<MinimalEventData> GetMinimalInfo()
+        {
+            if (!IsInitialized)
+            {
+                throw new EventDoesNotExistException();
+            }
+
+            return Task.FromResult(new MinimalEventData(this.GetPrimaryKeyString(), Name));
         }
 
         public Task<FullEventDetails> GetFullEventInfo()
@@ -175,6 +188,20 @@ namespace OrleansTicket.Actors
 
         [Id(0)]
         public double Price { get; set; }
+    }
+    [GenerateSerializer, Alias(nameof(MinimalEventData))]
+    public class MinimalEventData
+    {
+        public MinimalEventData(string id, string name)
+        {
+            Id = id;
+            Name = name;
+        }
+
+        [Id(0)]
+        public string Id { get; }
+        [Id(1)]
+        public string Name { get; }
     }
     [GenerateSerializer, Alias(nameof(EventDetails))]
     public class EventDetails
