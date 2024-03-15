@@ -15,6 +15,10 @@ namespace OrleansTicket.Actors
         Task<bool> CreateReservation(string seatId);
         Task CancelReservation(string seatId);
     }
+    /// <summary>
+    /// Grain representing Event entity with data describing a particular event.
+    /// Event's state is not persisted.
+    /// </summary>
     public sealed class EventGrain: Grain, IEventGrain
     {
         private bool IsInitialized { get; set; } = false;

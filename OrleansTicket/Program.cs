@@ -12,7 +12,10 @@ builder.Services.AddSwaggerGen();
 builder.Host.UseOrleans(static siloBuilder =>
 {
     siloBuilder.UseLocalhostClustering();
+    //// Option without database
     //siloBuilder.AddMemoryGrainStorage("users");
+    // Option with postgresql connection on localhost:5432 for user=postgres and password=admin to db=postgres
+    // You must create database and run 2 scripts provided below in order to initialize db proprely for Orleans
     siloBuilder.AddAdoNetGrainStorage("users", options =>
     {
         // RUN THIS https://github.com/dotnet/orleans/blob/main/src/AdoNet/Shared/PostgreSQL-Main.sql

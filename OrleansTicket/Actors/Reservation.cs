@@ -11,7 +11,10 @@ namespace OrleansTicket.Actors
         Task EventChangeAction();
         Task EventCancelledAction();
     }
-
+    /// <summary>
+    /// Grain representing Reservation entity with data describing a reservation for a seat on an particular event made by particular user.
+    /// Reservation's state is not persisted.
+    /// </summary>
     public sealed class ReservationGrain: Grain, IReservationGrain
     {
         private string Status { get; set; } = ReservationStates.CREATED;

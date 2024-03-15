@@ -13,6 +13,11 @@ namespace OrleansTicket.Actors
         Task<FullUserDetails> GetUserInfo();
         Task<bool> IsInitialized();
     }
+    /// <summary>
+    /// Grain representing User entity with data describing a particular user.
+    /// User's state is persisted apart from the reservation list(which is the case because of Reservation not being persisted).
+    /// </summary>
+    /// <param name="state">User's persistent state</param>
     public sealed class UserGrain(
         [PersistentState(stateName: "user", storageName: "users")] IPersistentState<UserDetails> state): Grain, IUserGrain
     {
