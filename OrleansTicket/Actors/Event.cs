@@ -9,7 +9,7 @@ namespace OrleansTicket.Actors
         Task<Guid> InitializeEvent(string name, double duration, string location, DateTime date, List<CreateSeatData> seats);
         Task<FullEventDetails> UpdateEventInfo(string name, double duration, string location, DateTime date);
         Task<EventDetails> GetEventInfo();
-        Task<FullEventDetails> GetFullEventInfo();
+        Task<FullEventDetails> GetFullEventInfo(string currency);
         Task<MinimalEventData> GetMinimalInfo();
         Task CancelEvent();
         Task<bool> CreateReservation(string seatId);
@@ -70,23 +70,18 @@ namespace OrleansTicket.Actors
             return Task.FromResult(new MinimalEventData(this.GetPrimaryKeyString(), Name));
         }
 
-        public Task<FullEventDetails> GetFullEventInfo()
+        public async Task<FullEventDetails> GetFullEventInfo(string currency)
         {
             if (!IsInitialized)
             {
                 throw new EventDoesNotExistException();
             }
-
-            //availableSeats = _seatList.Where(seat => !seatIdToReservationActor.ContainsKey(seat.Id)).ToList();
-            //var cheapestSeat = _seatList.Min(seat => seat.Price);
-            //var router = Context.System.ActorSelection("/user/currencyExchangeRouter");
-            //var sender = Sender;
-            //cheapestSeat = await router.Ask<double>(new ExchangeCurrency(readMsg.Currency, cheapestSeat));
-            //return Task.FromResult(new FullEventDetails(Name, Duration, Location, Date, Status, _seatList.Count, availableSeats.Count, availableSeats, cheapestSeat));
             var availableSeats = _seatList.Where(seat => !_seatIdToReservation.ContainsKey(seat.Id)).ToList();
             // TODO: Fix in akka
             var cheapestSeat = availableSeats.Count > 0 ? availableSeats.Min(seat => seat.Price) : 0;
-            return Task.FromResult(new FullEventDetails(Name, Duration, Location, Date, Status, _seatList.Count, availableSeats.Count, availableSeats, cheapestSeat));
+            var exchangeGrain = GrainFactory.GetGrain<IExchangeCurrencyGrain>(Guid.Empty);
+            cheapestSeat = await exchangeGrain.Exchange(cheapestSeat, currency);
+            return new FullEventDetails(Name, Duration, Location, Date, Status, _seatList.Count, availableSeats.Count, availableSeats, cheapestSeat);
         }
 
         public Task<FullEventDetails> UpdateEventInfo(string name, double duration, string location, DateTime date)

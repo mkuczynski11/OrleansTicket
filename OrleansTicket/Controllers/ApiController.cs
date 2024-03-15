@@ -72,9 +72,9 @@ namespace OrleansTicket.Controllers
             var eventGrain = _grainFactory.GetGrain<IEventGrain>(Guid.Parse(id));
             try
             {
-                var eventInfo = await eventGrain.GetFullEventInfo();
+                var eventInfo = await eventGrain.GetFullEventInfo(currency);
                 var seatsData = eventInfo.AvailableSeats.Select(seat => new GetEventSeatDTO(seat.Id, seat.Price)).ToList();
-                return TypedResults.Ok(new GetEventDataDTO(eventGrain.GetPrimaryKeyString(), eventInfo.Name, eventInfo.Duration, eventInfo.Location, eventInfo.Date, eventInfo.Status, eventInfo.SeatsAmount, eventInfo.AvailableSeatsAmount, seatsData));
+                return TypedResults.Ok(new GetEventDataDTO(eventGrain.GetPrimaryKeyString(), eventInfo.Name, eventInfo.Duration, eventInfo.Location, eventInfo.Date, eventInfo.Status, eventInfo.SeatsAmount, eventInfo.AvailableSeatsAmount, seatsData, eventInfo.CheapestSeat));
             }
             catch (EventDoesNotExistException e)
             {
