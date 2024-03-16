@@ -1,4 +1,5 @@
-﻿using Orleans.Runtime;
+﻿using Microsoft.Extensions.Logging;
+using Orleans.Runtime;
 using OrleansTicket.Exception;
 
 namespace OrleansTicket.Actors
@@ -17,6 +18,11 @@ namespace OrleansTicket.Actors
     /// </summary>
     public sealed class ReservationGrain: Grain, IReservationGrain
     {
+        private ILogger<ReservationGrain> _logger;
+        public ReservationGrain(ILogger<ReservationGrain> logger)
+        {
+            _logger = logger;
+        }
         private string Status { get; set; } = ReservationStates.CREATED;
         private IEventGrain Event { get; set; }
         private string SeatId { get; set; } = "";
@@ -24,6 +30,7 @@ namespace OrleansTicket.Actors
         private bool IsInitialized { get; set; } = false;
         public async Task<Guid> ReserveSeat(string eventId, string seatId, string email)
         {
+            _logger.LogInformation($"Reserving seat {seatId} for event {eventId} for user {email}");
             if (!Status.Equals(ReservationStates.CREATED))
             {
                 throw new ReservationExistsException();
@@ -54,6 +61,7 @@ namespace OrleansTicket.Actors
 
         public Task<ReservationDetails> GetReservationInfo()
         {
+            _logger.LogInformation($"Getting reservation info for {this.GetPrimaryKeyString()}");
             if (!IsInitialized)
             {
                 throw new ReservationDoesNotExistException();
@@ -63,6 +71,7 @@ namespace OrleansTicket.Actors
 
         public Task CancelReservation()
         {
+            _logger.LogInformation($"Cancelling reservation {this.GetPrimaryKeyString()}");
             if (!IsInitialized)
             {
                 throw new ReservationDoesNotExistException();
@@ -73,13 +82,13 @@ namespace OrleansTicket.Actors
         }
         public Task EventChangeAction()
         {
-            Console.WriteLine($"Event for reservation {this.GetPrimaryKeyString()} changed. Sending email to allow reservation changes to be made");
+            _logger.LogInformation($"Event for reservation {this.GetPrimaryKeyString()} changed. Sending email to allow reservation changes to be made");
             return Task.CompletedTask;
         }
         public Task EventCancelledAction()
         {
             Status = ReservationStates.CANCELED;
-            Console.WriteLine($"Reservation {this.GetPrimaryKeyString()} has been cancelled because of Event cancellation. Sending email with that information");
+            _logger.LogInformation($"Reservation {this.GetPrimaryKeyString()} has been cancelled because of Event cancellation. Sending email with that information");
             return Task.CompletedTask;
         }
     }

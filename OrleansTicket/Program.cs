@@ -1,4 +1,4 @@
-using Orleans.Configuration;
+ using Orleans.Configuration;
 
 var builder = WebApplication.CreateBuilder(args);
 

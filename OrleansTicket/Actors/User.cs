@@ -1,5 +1,6 @@
 ﻿using Orleans;
 using Orleans.Runtime;
+using OrleansTicket.Controllers;
 using OrleansTicket.Exception;
 using System.Xml.Linq;
 
@@ -21,9 +22,17 @@ namespace OrleansTicket.Actors
     public sealed class UserGrain(
         [PersistentState(stateName: "user", storageName: "users")] IPersistentState<UserDetails> state): Grain, IUserGrain
     {
+        private readonly ILogger<UserGrain> _logger;
+
+        public UserGrain(IPersistentState<UserDetails> state,  ILogger<UserGrain> logger) : this(state)
+        {
+            _logger = logger;
+        }
+
         private List<string> Reservations { get; set; } = new();
         public async Task<string> InitializeUser(string name, string surname)
         {
+            _logger.LogInformation($"Initializing user for {this.GetPrimaryKeyString()}");
             if (state.State.IsInitialized)
             {
                 throw new UserExistsException();
@@ -42,6 +51,7 @@ namespace OrleansTicket.Actors
 
         public async Task UpdateUserInfo(string name, string surname)
         {
+            _logger.LogInformation($"Updating user info for {this.GetPrimaryKeyString()}");
             if (!state.State.IsInitialized)
             {
                 throw new UserDoesNotExistException();
@@ -54,6 +64,7 @@ namespace OrleansTicket.Actors
 
         public async Task AddReservation(string reservationId)
         {
+            _logger.LogInformation($"Adding reservation {reservationId} for user {this.GetPrimaryKeyString()}");
             if (!state.State.IsInitialized)
             {
                 throw new UserDoesNotExistException();
@@ -66,6 +77,7 @@ namespace OrleansTicket.Actors
 
         public Task<FullUserDetails> GetUserInfo()
         {
+            _logger.LogInformation($"Getting user info for {this.GetPrimaryKeyString()}");
             if (!state.State.IsInitialized)
             {
                 throw new UserDoesNotExistException();

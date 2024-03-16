@@ -23,6 +23,7 @@ namespace OrleansTicket.Controllers
         [HttpGet("users/{email}")]
         public async Task<Results<NotFound<string>, Ok<GetUserDataDTO>>> GetUserData(string email)
         {
+            _logger.LogInformation($"Getting user data for {email}");
             var userGrain = _grainFactory.GetGrain<IUserGrain>(email);
 
             try
@@ -39,6 +40,7 @@ namespace OrleansTicket.Controllers
         [HttpPost("users")]
         public async Task<Results<BadRequest<string>, Created>> CreateUser([FromBody] CreateUserDTO createUserRequest)
         {
+            _logger.LogInformation($"Createing user {createUserRequest.Email}");
             var userGrain = _grainFactory.GetGrain<IUserGrain>(createUserRequest.Email);
             try
             {
@@ -54,6 +56,7 @@ namespace OrleansTicket.Controllers
         [HttpPut("users/{email}")]
         public async Task<Results<NotFound<string>, Ok>> ChangeUser(string email, [FromBody] UpdateUserDTO updateUserRequest)
         {
+            _logger.LogInformation($"Changing data for user {email}");
             var userGrain = _grainFactory.GetGrain<IUserGrain>(email);
             try
             {
@@ -69,6 +72,7 @@ namespace OrleansTicket.Controllers
         [HttpGet("events/{id}")]
         public async Task<Results<NotFound<string>, Ok<GetEventDataDTO>>> GetEvent(string id, string currency)
         {
+            _logger.LogInformation($"Getting event data for {id}");
             var eventGrain = _grainFactory.GetGrain<IEventGrain>(Guid.Parse(id));
             try
             {
@@ -86,6 +90,7 @@ namespace OrleansTicket.Controllers
         [HttpPost("events")]
         public async Task<Created> CreateEvent([FromBody] CreateEventDTO createEventRequest)
         {
+            _logger.LogInformation($"Getting new event for {createEventRequest.Name}");
             var eventGrain = _grainFactory.GetGrain<IEventGrain>(Guid.NewGuid());
             List<CreateSeatData> seats = createEventRequest.Seats.Select(seat => new CreateSeatData(seat.Price)).ToList();
             var eventId = await eventGrain.InitializeEvent(createEventRequest.Name, createEventRequest.Duration, createEventRequest.Location, createEventRequest.Date, seats);
@@ -96,6 +101,7 @@ namespace OrleansTicket.Controllers
         [HttpDelete("events/{id}")]
         public async Task<Results<NotFound<string>, NoContent>> CancelEvent(string id)
         {
+            _logger.LogInformation($"Cancelling event {id}");
             var eventGrain = _grainFactory.GetGrain<IEventGrain>(Guid.Parse(id));
             try
             {
@@ -111,6 +117,7 @@ namespace OrleansTicket.Controllers
         [HttpPut("events/{id}")]
         public async Task<Results<NotFound<string>, Ok>> ChangeEvent(string id, [FromBody] UpdateEventDTO updateEventRequest)
         {
+            _logger.LogInformation($"Changing event data for {id}");
             var eventGrain = _grainFactory.GetGrain<IEventGrain>(Guid.Parse(id));
             try
             {
@@ -126,6 +133,7 @@ namespace OrleansTicket.Controllers
         [HttpGet("events")]
         public async Task<Ok<GetEventsDataDTO>> GetEvents(string? name)
         {
+            _logger.LogInformation($"Getting events starting with {name}");
             var eventQueryGrain = _grainFactory.GetGrain<IEventQueryGrain>(Guid.NewGuid());
             var eventInfos = await eventQueryGrain.GetAllEvents(name);
             var eventList = eventInfos.Select(x => new GetEventsDataDTO.EventDTO(x.Id, x.Name)).ToList();
@@ -136,6 +144,7 @@ namespace OrleansTicket.Controllers
         [HttpPost("events/{eventId}/seats/{seatId}")]
         public async Task<Results<NotFound<string>, BadRequest<string>, Created>> ReserveSeat([FromBody] CreateReservationDTO createReservationRequest, string eventId, string seatId)
         {
+            _logger.LogInformation($"Creating reservation for event {eventId} and seat {seatId}");
             var reservationGrain = _grainFactory.GetGrain<IReservationGrain>(Guid.NewGuid());
             try
             {
@@ -167,6 +176,7 @@ namespace OrleansTicket.Controllers
         [HttpDelete("reservations/{id}")]
         public async Task<Results<NotFound<string>, NoContent>> CancelReservation(string id)
         {
+            _logger.LogInformation($"Cancelling reservation {id}");
             var reservationGrain = _grainFactory.GetGrain<IReservationGrain>(Guid.Parse(id));
             try
             {
@@ -182,6 +192,7 @@ namespace OrleansTicket.Controllers
         [HttpGet("reservations/{id}")]
         public async Task<Results<NotFound<string>, Ok<GetReservationDataDTO>>> GetReservation(string id)
         {
+            _logger.LogInformation($"Getting reservation data for {id}");
             var reservationGrain = _grainFactory.GetGrain<IReservationGrain>(Guid.Parse(id));
             try
             {

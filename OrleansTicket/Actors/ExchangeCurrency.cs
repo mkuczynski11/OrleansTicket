@@ -13,9 +13,16 @@ namespace OrleansTicket.Actors
     [StatelessWorker(maxLocalWorkers: 3)]
     public class ExchangeCurrency : Grain, IExchangeCurrencyGrain
     {
+        ILogger<ExchangeCurrency> _logger;
+        public ExchangeCurrency(ILogger<ExchangeCurrency> logger)
+        {
+            _logger = logger;
+        }
+
         private static bool ShouldDelay = true;
         private double CurrencyRate(string currency)
         {
+            _logger.LogInformation($"Exchanging for {currency}");
             switch (currency)
             {
                 case "":
@@ -30,6 +37,7 @@ namespace OrleansTicket.Actors
         }
         public async Task<double> Exchange(double amount, string fromCurrency)
         {
+            _logger.LogInformation($"Exchanging {amount} for {fromCurrency}");
             if (ShouldDelay)
             {
                 Console.WriteLine("Creating delay of 5 seconds");

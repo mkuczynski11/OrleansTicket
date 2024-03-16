@@ -1,6 +1,7 @@
 ﻿using Orleans.Runtime;
 using OrleansTicket.Exception;
 using System;
+using System.Xml.Linq;
 
 namespace OrleansTicket.Actors
 {
@@ -21,6 +22,11 @@ namespace OrleansTicket.Actors
     /// </summary>
     public sealed class EventGrain: Grain, IEventGrain
     {
+        ILogger<EventGrain> _logger;
+        public EventGrain(ILogger<EventGrain> logger)
+        {
+            _logger = logger;
+        }
         private bool IsInitialized { get; set; } = false;
         private string Name { get; set; } = "";
         private double Duration { get; set; }
@@ -33,6 +39,7 @@ namespace OrleansTicket.Actors
         private static double FetchSimulationProbability = 0.1f;
         public Task<Guid> InitializeEvent(string name, double duration, string location, DateTime date, List<CreateSeatData> seats)
         {
+            _logger.LogInformation($"Initializing event {name}");
             if (IsInitialized)
             {
                 throw new EventExistsException();
@@ -53,6 +60,7 @@ namespace OrleansTicket.Actors
 
         public Task<EventDetails> GetEventInfo()
         {
+            _logger.LogInformation($"Getting event info for {this.GetPrimaryKeyString()}");
             if (!IsInitialized)
             {
                 throw new EventDoesNotExistException();
@@ -64,6 +72,7 @@ namespace OrleansTicket.Actors
 
         public async Task<MinimalEventData> GetMinimalInfo()
         {
+            _logger.LogInformation($"Getting event minimal info for {this.GetPrimaryKeyString()}");
             if (!IsInitialized)
             {
                 throw new EventDoesNotExistException();
@@ -80,6 +89,7 @@ namespace OrleansTicket.Actors
 
         public async Task<FullEventDetails> GetFullEventInfo(string currency)
         {
+            _logger.LogInformation($"Getting event full info for {this.GetPrimaryKeyString()}");
             if (!IsInitialized)
             {
                 throw new EventDoesNotExistException();
@@ -94,6 +104,7 @@ namespace OrleansTicket.Actors
 
         public Task<FullEventDetails> UpdateEventInfo(string name, double duration, string location, DateTime date)
         {
+            _logger.LogInformation($"Updating event info for {this.GetPrimaryKeyString()}");
             if (!IsInitialized)
             {
                 throw new EventDoesNotExistException();
@@ -114,6 +125,7 @@ namespace OrleansTicket.Actors
 
         public Task CancelEvent()
         {
+            _logger.LogInformation($"Cancelling event for {this.GetPrimaryKeyString()}");
             if (!IsInitialized)
             {
                 throw new EventDoesNotExistException();
@@ -130,6 +142,7 @@ namespace OrleansTicket.Actors
 
         public Task<bool> CreateReservation(string seatId)
         {
+            _logger.LogInformation($"Creating reservation for seat {seatId} for event {this.GetPrimaryKeyString()}");
             if (!IsInitialized)
             {
                 throw new EventDoesNotExistException();
@@ -158,6 +171,7 @@ namespace OrleansTicket.Actors
 
         public Task CancelReservation(string seatId)
         {
+            _logger.LogInformation($"Cancelling reservation for seat {seatId} for event {this.GetPrimaryKeyString()}");
             if (!IsInitialized)
             {
                 throw new EventDoesNotExistException();
