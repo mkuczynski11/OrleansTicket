@@ -20,19 +20,13 @@ namespace OrleansTicket.Actors
     /// </summary>
     /// <param name="state">User's persistent state</param>
     public sealed class UserGrain(
-        [PersistentState(stateName: "user", storageName: "users")] IPersistentState<UserDetails> state): Grain, IUserGrain
+        [PersistentState(stateName: "user", storageName: "users")] IPersistentState<UserDetails> state, ILogger<UserGrain> logger): Grain, IUserGrain
     {
-        private readonly ILogger<UserGrain> _logger;
-
-        public UserGrain(IPersistentState<UserDetails> state,  ILogger<UserGrain> logger) : this(state)
-        {
-            _logger = logger;
-        }
 
         private List<string> Reservations { get; set; } = new();
         public async Task<string> InitializeUser(string name, string surname)
         {
-            _logger.LogInformation($"Initializing user for {this.GetPrimaryKeyString()}");
+            logger.LogInformation($"Initializing user for {this.GetPrimaryKeyString()}");
             if (state.State.IsInitialized)
             {
                 throw new UserExistsException();
@@ -51,7 +45,7 @@ namespace OrleansTicket.Actors
 
         public async Task UpdateUserInfo(string name, string surname)
         {
-            _logger.LogInformation($"Updating user info for {this.GetPrimaryKeyString()}");
+            logger.LogInformation($"Updating user info for {this.GetPrimaryKeyString()}");
             if (!state.State.IsInitialized)
             {
                 throw new UserDoesNotExistException();
@@ -64,7 +58,7 @@ namespace OrleansTicket.Actors
 
         public async Task AddReservation(string reservationId)
         {
-            _logger.LogInformation($"Adding reservation {reservationId} for user {this.GetPrimaryKeyString()}");
+            logger.LogInformation($"Adding reservation {reservationId} for user {this.GetPrimaryKeyString()}");
             if (!state.State.IsInitialized)
             {
                 throw new UserDoesNotExistException();
@@ -77,7 +71,7 @@ namespace OrleansTicket.Actors
 
         public Task<FullUserDetails> GetUserInfo()
         {
-            _logger.LogInformation($"Getting user info for {this.GetPrimaryKeyString()}");
+            logger.LogInformation($"Getting user info for {this.GetPrimaryKeyString()}");
             if (!state.State.IsInitialized)
             {
                 throw new UserDoesNotExistException();
