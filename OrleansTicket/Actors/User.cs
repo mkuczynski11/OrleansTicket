@@ -26,7 +26,7 @@ namespace OrleansTicket.Actors
         private List<string> Reservations { get; set; } = new();
         public async Task<string> InitializeUser(string name, string surname)
         {
-            logger.LogInformation($"Initializing user  sssfor {this.GetPrimaryKeyString()}");
+            logger.LogInformation($"Initializing user for {this.GetPrimaryKeyString()}");
             if (state.State.IsInitialized)
             {
                 throw new UserExistsException();
