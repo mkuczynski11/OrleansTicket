@@ -52,6 +52,10 @@
               "target": "Package",
               "version": "[8.0.0, )"
             },
+            "Microsoft.Orleans.TestingHost": {
+              "target": "Package",
+              "version": "[8.1.0, )"
+            },
             "Npgsql": {
               "target": "Package",
               "version": "[8.0.2, )"

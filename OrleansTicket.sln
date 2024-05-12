@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34330.188
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrleansTicket", "OrleansTicket\OrleansTicket.csproj", "{DB7F8503-1221-42A7-9744-EFB465D98218}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OrleansTicket", "OrleansTicket\OrleansTicket.csproj", "{DB7F8503-1221-42A7-9744-EFB465D98218}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrleansTicketTestss", "OrleansTicketTestss\OrleansTicketTestss.csproj", "{11D53A83-7565-4B6D-B279-ADF0579207A4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{DB7F8503-1221-42A7-9744-EFB465D98218}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DB7F8503-1221-42A7-9744-EFB465D98218}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DB7F8503-1221-42A7-9744-EFB465D98218}.Release|Any CPU.Build.0 = Release|Any CPU
+		{11D53A83-7565-4B6D-B279-ADF0579207A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{11D53A83-7565-4B6D-B279-ADF0579207A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{11D53A83-7565-4B6D-B279-ADF0579207A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{11D53A83-7565-4B6D-B279-ADF0579207A4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

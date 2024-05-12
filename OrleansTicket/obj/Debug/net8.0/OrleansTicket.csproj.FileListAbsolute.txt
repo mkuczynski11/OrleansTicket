@@ -86,3 +86,5 @@ C:\Users\mkuczynski11\Desktop\magisterka\repos\OrleansTicket\OrleansTicket\bin\D
 C:\Users\mkuczynski11\Desktop\magisterka\repos\OrleansTicket\OrleansTicket\bin\Debug\net8.0\OpenTelemetry.Api.ProviderBuilderExtensions.dll
 C:\Users\mkuczynski11\Desktop\magisterka\repos\OrleansTicket\OrleansTicket\bin\Debug\net8.0\OrleansDashboard.dll
 C:\Users\mkuczynski11\Desktop\magisterka\repos\OrleansTicket\OrleansTicket\bin\Debug\net8.0\OrleansDashboard.Core.dll
+C:\Users\mkuczynski11\Desktop\magisterka\repos\OrleansTicket\OrleansTicket\bin\Debug\net8.0\Orleans.Streaming.dll
+C:\Users\mkuczynski11\Desktop\magisterka\repos\OrleansTicket\OrleansTicket\bin\Debug\net8.0\Orleans.TestingHost.dll

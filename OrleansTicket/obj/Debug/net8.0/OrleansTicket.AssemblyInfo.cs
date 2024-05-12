@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("OrleansTicket")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4cbc13a815b7a9d1b2e22d0f4686a6fd86a66564")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+28c32140d2a3bbe9563c657b798568a2999da050")]
 [assembly: System.Reflection.AssemblyProductAttribute("OrleansTicket")]
 [assembly: System.Reflection.AssemblyTitleAttribute("OrleansTicket")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -12,69 +12,6 @@
       },
       "results": [
         {
-          "ruleId": "CS0168",
-          "level": "warning",
-          "message": "The variable 'e' is declared but never used",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/Users/mkuczynski11/Desktop/magisterka/repos/OrleansTicket/OrleansTicket/Controllers/ApiController.cs",
-                "region": {
-                  "startLine": 34,
-                  "startColumn": 46,
-                  "endLine": 34,
-                  "endColumn": 47
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 3
-          }
-        },
-        {
-          "ruleId": "CS0168",
-          "level": "warning",
-          "message": "The variable 'e' is declared but never used",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/Users/mkuczynski11/Desktop/magisterka/repos/OrleansTicket/OrleansTicket/Controllers/ApiController.cs",
-                "region": {
-                  "startLine": 50,
-                  "startColumn": 39,
-                  "endLine": 50,
-                  "endColumn": 40
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 3
-          }
-        },
-        {
-          "ruleId": "CS0168",
-          "level": "warning",
-          "message": "The variable 'e' is declared but never used",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/Users/mkuczynski11/Desktop/magisterka/repos/OrleansTicket/OrleansTicket/Controllers/ApiController.cs",
-                "region": {
-                  "startLine": 66,
-                  "startColumn": 46,
-                  "endLine": 66,
-                  "endColumn": 47
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 3
-          }
-        },
-        {
           "ruleId": "CS8618",
           "level": "warning",
           "message": "Non-nullable property 'Event' must contain a non-null value when exiting constructor. Consider declaring the property as nullable.",
@@ -140,6 +77,69 @@
           ],
           "properties": {
             "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS0168",
+          "level": "warning",
+          "message": "The variable 'e' is declared but never used",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/mkuczynski11/Desktop/magisterka/repos/OrleansTicket/OrleansTicket/Controllers/ApiController.cs",
+                "region": {
+                  "startLine": 34,
+                  "startColumn": 46,
+                  "endLine": 34,
+                  "endColumn": 47
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 3
+          }
+        },
+        {
+          "ruleId": "CS0168",
+          "level": "warning",
+          "message": "The variable 'e' is declared but never used",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/mkuczynski11/Desktop/magisterka/repos/OrleansTicket/OrleansTicket/Controllers/ApiController.cs",
+                "region": {
+                  "startLine": 50,
+                  "startColumn": 39,
+                  "endLine": 50,
+                  "endColumn": 40
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 3
+          }
+        },
+        {
+          "ruleId": "CS0168",
+          "level": "warning",
+          "message": "The variable 'e' is declared but never used",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/mkuczynski11/Desktop/magisterka/repos/OrleansTicket/OrleansTicket/Controllers/ApiController.cs",
+                "region": {
+                  "startLine": 66,
+                  "startColumn": 46,
+                  "endLine": 66,
+                  "endColumn": 47
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 3
           }
         },
         {
@@ -374,42 +374,451 @@
           }
         },
         {
-          "ruleId": "S3925",
+          "ruleId": "S1135",
           "level": "warning",
-          "message": "Update this implementation of 'ISerializable' to conform to the recommended serialization pattern.",
+          "message": "Complete the task associated to this 'TODO' comment.",
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///C:/Users/mkuczynski11/Desktop/magisterka/repos/OrleansTicket/OrleansTicket/Exception/SeatDoesNotExistException.cs",
+                "uri": "file:///C:/Users/mkuczynski11/Desktop/magisterka/repos/OrleansTicket/OrleansTicket/Actors/Event.cs",
+                "region": {
+                  "startLine": 98,
+                  "startColumn": 16,
+                  "endLine": 98,
+                  "endColumn": 20
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1135",
+          "level": "warning",
+          "message": "Complete the task associated to this 'TODO' comment.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/mkuczynski11/Desktop/magisterka/repos/OrleansTicket/OrleansTicket/Controllers/ApiController.cs",
+                "region": {
+                  "startLine": 85,
+                  "startColumn": 20,
+                  "endLine": 85,
+                  "endColumn": 24
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S125",
+          "level": "warning",
+          "message": "Remove this commented out code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/mkuczynski11/Desktop/magisterka/repos/OrleansTicket/OrleansTicket/Program.cs",
+                "region": {
+                  "startLine": 31,
+                  "startColumn": 5,
+                  "endLine": 31,
+                  "endColumn": 50
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2933",
+          "level": "warning",
+          "message": "Make '_logger' 'readonly'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/mkuczynski11/Desktop/magisterka/repos/OrleansTicket/OrleansTicket/Actors/EventQuery.cs",
+                "region": {
+                  "startLine": 15,
+                  "startColumn": 29,
+                  "endLine": 15,
+                  "endColumn": 36
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "ORLEANS0010",
+          "level": "note",
+          "message": "Add missing alias attributes",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/mkuczynski11/Desktop/magisterka/repos/OrleansTicket/OrleansTicket/Actors/EventRepository.cs",
+                "region": {
+                  "startLine": 5,
+                  "startColumn": 5,
+                  "endLine": 9,
+                  "endColumn": 6
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "Arity": "0",
+              "NamespaceAndNesting": "OrleansTicket.Actors",
+              "TypeName": "IEventRepositoryGrain"
+            }
+          }
+        },
+        {
+          "ruleId": "ORLEANS0010",
+          "level": "note",
+          "message": "Add missing alias attributes",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/mkuczynski11/Desktop/magisterka/repos/OrleansTicket/OrleansTicket/Actors/EventRepository.cs",
+                "region": {
+                  "startLine": 7,
+                  "startColumn": 9,
+                  "endLine": 7,
+                  "endColumn": 37
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "Arity": "0",
+              "NamespaceAndNesting": null,
+              "TypeName": "AddEvent"
+            }
+          }
+        },
+        {
+          "ruleId": "ORLEANS0010",
+          "level": "note",
+          "message": "Add missing alias attributes",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/mkuczynski11/Desktop/magisterka/repos/OrleansTicket/OrleansTicket/Actors/EventRepository.cs",
+                "region": {
+                  "startLine": 8,
+                  "startColumn": 9,
+                  "endLine": 8,
+                  "endColumn": 57
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "Arity": "0",
+              "NamespaceAndNesting": null,
+              "TypeName": "GetEvents"
+            }
+          }
+        },
+        {
+          "ruleId": "ORLEANS0010",
+          "level": "note",
+          "message": "Add missing alias attributes",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/mkuczynski11/Desktop/magisterka/repos/OrleansTicket/OrleansTicket/Actors/ExchangeCurrency.cs",
+                "region": {
+                  "startLine": 5,
+                  "startColumn": 5,
+                  "endLine": 8,
+                  "endColumn": 6
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "Arity": "0",
+              "NamespaceAndNesting": "OrleansTicket.Actors",
+              "TypeName": "IExchangeCurrencyGrain"
+            }
+          }
+        },
+        {
+          "ruleId": "ORLEANS0010",
+          "level": "note",
+          "message": "Add missing alias attributes",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/mkuczynski11/Desktop/magisterka/repos/OrleansTicket/OrleansTicket/Actors/ExchangeCurrency.cs",
+                "region": {
+                  "startLine": 7,
+                  "startColumn": 9,
+                  "endLine": 7,
+                  "endColumn": 67
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "Arity": "0",
+              "NamespaceAndNesting": null,
+              "TypeName": "Exchange"
+            }
+          }
+        },
+        {
+          "ruleId": "S2933",
+          "level": "warning",
+          "message": "Make '_logger' 'readonly'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/mkuczynski11/Desktop/magisterka/repos/OrleansTicket/OrleansTicket/Actors/EventRepository.cs",
+                "region": {
+                  "startLine": 15,
+                  "startColumn": 34,
+                  "endLine": 15,
+                  "endColumn": 41
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2933",
+          "level": "warning",
+          "message": "Make '_events' 'readonly'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/mkuczynski11/Desktop/magisterka/repos/OrleansTicket/OrleansTicket/Actors/EventRepository.cs",
+                "region": {
+                  "startLine": 20,
+                  "startColumn": 48,
+                  "endLine": 20,
+                  "endColumn": 55
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "ORLEANS0010",
+          "level": "note",
+          "message": "Add missing alias attributes",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/mkuczynski11/Desktop/magisterka/repos/OrleansTicket/OrleansTicket/Actors/Reservation.cs",
+                "region": {
+                  "startLine": 7,
+                  "startColumn": 5,
+                  "endLine": 14,
+                  "endColumn": 6
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "Arity": "0",
+              "NamespaceAndNesting": "OrleansTicket.Actors",
+              "TypeName": "IReservationGrain"
+            }
+          }
+        },
+        {
+          "ruleId": "ORLEANS0010",
+          "level": "note",
+          "message": "Add missing alias attributes",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/mkuczynski11/Desktop/magisterka/repos/OrleansTicket/OrleansTicket/Actors/Reservation.cs",
+                "region": {
+                  "startLine": 9,
+                  "startColumn": 9,
+                  "endLine": 9,
+                  "endColumn": 77
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "Arity": "0",
+              "NamespaceAndNesting": null,
+              "TypeName": "ReserveSeat"
+            }
+          }
+        },
+        {
+          "ruleId": "ORLEANS0010",
+          "level": "note",
+          "message": "Add missing alias attributes",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/mkuczynski11/Desktop/magisterka/repos/OrleansTicket/OrleansTicket/Actors/Reservation.cs",
+                "region": {
+                  "startLine": 10,
+                  "startColumn": 9,
+                  "endLine": 10,
+                  "endColumn": 55
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "Arity": "0",
+              "NamespaceAndNesting": null,
+              "TypeName": "GetReservationInfo"
+            }
+          }
+        },
+        {
+          "ruleId": "ORLEANS0010",
+          "level": "note",
+          "message": "Add missing alias attributes",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/mkuczynski11/Desktop/magisterka/repos/OrleansTicket/OrleansTicket/Actors/Reservation.cs",
+                "region": {
+                  "startLine": 11,
+                  "startColumn": 9,
+                  "endLine": 11,
+                  "endColumn": 34
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "Arity": "0",
+              "NamespaceAndNesting": null,
+              "TypeName": "CancelReservation"
+            }
+          }
+        },
+        {
+          "ruleId": "ORLEANS0010",
+          "level": "note",
+          "message": "Add missing alias attributes",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/mkuczynski11/Desktop/magisterka/repos/OrleansTicket/OrleansTicket/Actors/Reservation.cs",
+                "region": {
+                  "startLine": 12,
+                  "startColumn": 9,
+                  "endLine": 12,
+                  "endColumn": 34
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "Arity": "0",
+              "NamespaceAndNesting": null,
+              "TypeName": "EventChangeAction"
+            }
+          }
+        },
+        {
+          "ruleId": "ORLEANS0010",
+          "level": "note",
+          "message": "Add missing alias attributes",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/mkuczynski11/Desktop/magisterka/repos/OrleansTicket/OrleansTicket/Actors/Reservation.cs",
+                "region": {
+                  "startLine": 13,
+                  "startColumn": 9,
+                  "endLine": 13,
+                  "endColumn": 37
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "Arity": "0",
+              "NamespaceAndNesting": null,
+              "TypeName": "EventCancelledAction"
+            }
+          }
+        },
+        {
+          "ruleId": "S101",
+          "level": "warning",
+          "message": "Rename class 'CreateEventSeatDTO' to match pascal case naming rules, consider using 'CreateEventSeatDto'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/mkuczynski11/Desktop/magisterka/repos/OrleansTicket/OrleansTicket/DTO/CreateEventSeatDTO.cs",
                 "region": {
                   "startLine": 3,
-                  "startColumn": 18,
+                  "startColumn": 25,
                   "endLine": 3,
                   "endColumn": 43
                 }
               }
             }
           ],
-          "relatedLocations": [
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "ORLEANS0010",
+          "level": "note",
+          "message": "Add missing alias attributes",
+          "locations": [
             {
-              "physicalLocation": {
-                "uri": "file:///C:/Users/mkuczynski11/Desktop/magisterka/repos/OrleansTicket/OrleansTicket/Exception/SeatDoesNotExistException.cs",
+              "resultFile": {
+                "uri": "file:///C:/Users/mkuczynski11/Desktop/magisterka/repos/OrleansTicket/OrleansTicket/Actors/EventQuery.cs",
                 "region": {
-                  "startLine": 3,
-                  "startColumn": 12,
-                  "endLine": 3,
-                  "endColumn": 17
-                }
-              }
-            },
-            {
-              "physicalLocation": {
-                "uri": "file:///C:/Users/mkuczynski11/Desktop/magisterka/repos/OrleansTicket/OrleansTicket/Exception/SeatDoesNotExistException.cs",
-                "region": {
-                  "startLine": 3,
-                  "startColumn": 12,
-                  "endLine": 3,
-                  "endColumn": 17
+                  "startLine": 6,
+                  "startColumn": 5,
+                  "endLine": 9,
+                  "endColumn": 6
                 }
               }
             }
@@ -417,48 +826,25 @@
           "properties": {
             "warningLevel": 1,
             "customProperties": {
-              "0": "Add 'System.SerializableAttribute' attribute on 'SeatDoesNotExistException' because it implements 'ISerializable'.",
-              "1": "Add a 'protected' constructor 'SeatDoesNotExistException(SerializationInfo, StreamingContext)'."
+              "Arity": "0",
+              "NamespaceAndNesting": "OrleansTicket.Actors",
+              "TypeName": "IEventQueryGrain"
             }
           }
         },
         {
-          "ruleId": "S3925",
-          "level": "warning",
-          "message": "Update this implementation of 'ISerializable' to conform to the recommended serialization pattern.",
+          "ruleId": "ORLEANS0010",
+          "level": "note",
+          "message": "Add missing alias attributes",
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///C:/Users/mkuczynski11/Desktop/magisterka/repos/OrleansTicket/OrleansTicket/Exception/ReservationDeclinedException.cs",
+                "uri": "file:///C:/Users/mkuczynski11/Desktop/magisterka/repos/OrleansTicket/OrleansTicket/Actors/EventQuery.cs",
                 "region": {
-                  "startLine": 3,
-                  "startColumn": 18,
-                  "endLine": 3,
-                  "endColumn": 46
-                }
-              }
-            }
-          ],
-          "relatedLocations": [
-            {
-              "physicalLocation": {
-                "uri": "file:///C:/Users/mkuczynski11/Desktop/magisterka/repos/OrleansTicket/OrleansTicket/Exception/ReservationDeclinedException.cs",
-                "region": {
-                  "startLine": 3,
-                  "startColumn": 12,
-                  "endLine": 3,
-                  "endColumn": 17
-                }
-              }
-            },
-            {
-              "physicalLocation": {
-                "uri": "file:///C:/Users/mkuczynski11/Desktop/magisterka/repos/OrleansTicket/OrleansTicket/Exception/ReservationDeclinedException.cs",
-                "region": {
-                  "startLine": 3,
-                  "startColumn": 12,
-                  "endLine": 3,
-                  "endColumn": 17
+                  "startLine": 8,
+                  "startColumn": 9,
+                  "endLine": 8,
+                  "endColumn": 64
                 }
               }
             }
@@ -466,352 +852,115 @@
           "properties": {
             "warningLevel": 1,
             "customProperties": {
-              "0": "Add 'System.SerializableAttribute' attribute on 'ReservationDeclinedException' because it implements 'ISerializable'.",
-              "1": "Add a 'protected' constructor 'ReservationDeclinedException(SerializationInfo, StreamingContext)'."
+              "Arity": "0",
+              "NamespaceAndNesting": null,
+              "TypeName": "GetAllEvents"
             }
           }
         },
         {
-          "ruleId": "S3925",
+          "ruleId": "S2933",
           "level": "warning",
-          "message": "Update this implementation of 'ISerializable' to conform to the recommended serialization pattern.",
+          "message": "Make '_logger' 'readonly'.",
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///C:/Users/mkuczynski11/Desktop/magisterka/repos/OrleansTicket/OrleansTicket/Exception/EventExistsException.cs",
+                "uri": "file:///C:/Users/mkuczynski11/Desktop/magisterka/repos/OrleansTicket/OrleansTicket/Actors/Event.cs",
+                "region": {
+                  "startLine": 25,
+                  "startColumn": 29,
+                  "endLine": 25,
+                  "endColumn": 36
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2933",
+          "level": "warning",
+          "message": "Make '_seatList' 'readonly'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/mkuczynski11/Desktop/magisterka/repos/OrleansTicket/OrleansTicket/Actors/Event.cs",
+                "region": {
+                  "startLine": 36,
+                  "startColumn": 28,
+                  "endLine": 36,
+                  "endColumn": 37
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2933",
+          "level": "warning",
+          "message": "Make '_seatIdToReservation' 'readonly'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/mkuczynski11/Desktop/magisterka/repos/OrleansTicket/OrleansTicket/Actors/Event.cs",
+                "region": {
+                  "startLine": 37,
+                  "startColumn": 55,
+                  "endLine": 37,
+                  "endColumn": 75
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S101",
+          "level": "warning",
+          "message": "Rename class 'CreateUserDTO' to match pascal case naming rules, consider using 'CreateUserDto'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/mkuczynski11/Desktop/magisterka/repos/OrleansTicket/OrleansTicket/DTO/CreateUserDTO.cs",
                 "region": {
                   "startLine": 3,
-                  "startColumn": 18,
+                  "startColumn": 25,
                   "endLine": 3,
                   "endColumn": 38
                 }
               }
             }
           ],
-          "relatedLocations": [
-            {
-              "physicalLocation": {
-                "uri": "file:///C:/Users/mkuczynski11/Desktop/magisterka/repos/OrleansTicket/OrleansTicket/Exception/EventExistsException.cs",
-                "region": {
-                  "startLine": 3,
-                  "startColumn": 12,
-                  "endLine": 3,
-                  "endColumn": 17
-                }
-              }
-            },
-            {
-              "physicalLocation": {
-                "uri": "file:///C:/Users/mkuczynski11/Desktop/magisterka/repos/OrleansTicket/OrleansTicket/Exception/EventExistsException.cs",
-                "region": {
-                  "startLine": 3,
-                  "startColumn": 12,
-                  "endLine": 3,
-                  "endColumn": 17
-                }
-              }
-            }
-          ],
           "properties": {
-            "warningLevel": 1,
-            "customProperties": {
-              "0": "Add 'System.SerializableAttribute' attribute on 'EventExistsException' because it implements 'ISerializable'.",
-              "1": "Add a 'protected' constructor 'EventExistsException(SerializationInfo, StreamingContext)'."
-            }
+            "warningLevel": 1
           }
         },
         {
-          "ruleId": "S3925",
+          "ruleId": "S2933",
           "level": "warning",
-          "message": "Update this implementation of 'ISerializable' to conform to the recommended serialization pattern.",
+          "message": "Make '_logger' 'readonly'.",
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///C:/Users/mkuczynski11/Desktop/magisterka/repos/OrleansTicket/OrleansTicket/Exception/UserDoesNotExistException.cs",
+                "uri": "file:///C:/Users/mkuczynski11/Desktop/magisterka/repos/OrleansTicket/OrleansTicket/Actors/Reservation.cs",
                 "region": {
-                  "startLine": 3,
-                  "startColumn": 18,
-                  "endLine": 3,
-                  "endColumn": 43
-                }
-              }
-            }
-          ],
-          "relatedLocations": [
-            {
-              "physicalLocation": {
-                "uri": "file:///C:/Users/mkuczynski11/Desktop/magisterka/repos/OrleansTicket/OrleansTicket/Exception/UserDoesNotExistException.cs",
-                "region": {
-                  "startLine": 3,
-                  "startColumn": 12,
-                  "endLine": 3,
-                  "endColumn": 17
-                }
-              }
-            },
-            {
-              "physicalLocation": {
-                "uri": "file:///C:/Users/mkuczynski11/Desktop/magisterka/repos/OrleansTicket/OrleansTicket/Exception/UserDoesNotExistException.cs",
-                "region": {
-                  "startLine": 3,
-                  "startColumn": 12,
-                  "endLine": 3,
-                  "endColumn": 17
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1,
-            "customProperties": {
-              "0": "Add 'System.SerializableAttribute' attribute on 'UserDoesNotExistException' because it implements 'ISerializable'.",
-              "1": "Add a 'protected' constructor 'UserDoesNotExistException(SerializationInfo, StreamingContext)'."
-            }
-          }
-        },
-        {
-          "ruleId": "S3925",
-          "level": "warning",
-          "message": "Update this implementation of 'ISerializable' to conform to the recommended serialization pattern.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/Users/mkuczynski11/Desktop/magisterka/repos/OrleansTicket/OrleansTicket/Exception/NoConnectionException.cs",
-                "region": {
-                  "startLine": 3,
-                  "startColumn": 18,
-                  "endLine": 3,
-                  "endColumn": 39
-                }
-              }
-            }
-          ],
-          "relatedLocations": [
-            {
-              "physicalLocation": {
-                "uri": "file:///C:/Users/mkuczynski11/Desktop/magisterka/repos/OrleansTicket/OrleansTicket/Exception/NoConnectionException.cs",
-                "region": {
-                  "startLine": 3,
-                  "startColumn": 12,
-                  "endLine": 3,
-                  "endColumn": 17
-                }
-              }
-            },
-            {
-              "physicalLocation": {
-                "uri": "file:///C:/Users/mkuczynski11/Desktop/magisterka/repos/OrleansTicket/OrleansTicket/Exception/NoConnectionException.cs",
-                "region": {
-                  "startLine": 3,
-                  "startColumn": 12,
-                  "endLine": 3,
-                  "endColumn": 17
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1,
-            "customProperties": {
-              "0": "Add 'System.SerializableAttribute' attribute on 'NoConnectionException' because it implements 'ISerializable'.",
-              "1": "Add a 'protected' constructor 'NoConnectionException(SerializationInfo, StreamingContext)'."
-            }
-          }
-        },
-        {
-          "ruleId": "S3925",
-          "level": "warning",
-          "message": "Update this implementation of 'ISerializable' to conform to the recommended serialization pattern.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/Users/mkuczynski11/Desktop/magisterka/repos/OrleansTicket/OrleansTicket/Exception/EventDoesNotExistException.cs",
-                "region": {
-                  "startLine": 3,
-                  "startColumn": 18,
-                  "endLine": 3,
-                  "endColumn": 44
-                }
-              }
-            }
-          ],
-          "relatedLocations": [
-            {
-              "physicalLocation": {
-                "uri": "file:///C:/Users/mkuczynski11/Desktop/magisterka/repos/OrleansTicket/OrleansTicket/Exception/EventDoesNotExistException.cs",
-                "region": {
-                  "startLine": 3,
-                  "startColumn": 12,
-                  "endLine": 3,
-                  "endColumn": 17
-                }
-              }
-            },
-            {
-              "physicalLocation": {
-                "uri": "file:///C:/Users/mkuczynski11/Desktop/magisterka/repos/OrleansTicket/OrleansTicket/Exception/EventDoesNotExistException.cs",
-                "region": {
-                  "startLine": 3,
-                  "startColumn": 12,
-                  "endLine": 3,
-                  "endColumn": 17
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1,
-            "customProperties": {
-              "0": "Add 'System.SerializableAttribute' attribute on 'EventDoesNotExistException' because it implements 'ISerializable'.",
-              "1": "Add a 'protected' constructor 'EventDoesNotExistException(SerializationInfo, StreamingContext)'."
-            }
-          }
-        },
-        {
-          "ruleId": "S3925",
-          "level": "warning",
-          "message": "Update this implementation of 'ISerializable' to conform to the recommended serialization pattern.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/Users/mkuczynski11/Desktop/magisterka/repos/OrleansTicket/OrleansTicket/Exception/ReservationExistsException.cs",
-                "region": {
-                  "startLine": 3,
-                  "startColumn": 18,
-                  "endLine": 3,
-                  "endColumn": 44
-                }
-              }
-            }
-          ],
-          "relatedLocations": [
-            {
-              "physicalLocation": {
-                "uri": "file:///C:/Users/mkuczynski11/Desktop/magisterka/repos/OrleansTicket/OrleansTicket/Exception/ReservationExistsException.cs",
-                "region": {
-                  "startLine": 3,
-                  "startColumn": 12,
-                  "endLine": 3,
-                  "endColumn": 17
-                }
-              }
-            },
-            {
-              "physicalLocation": {
-                "uri": "file:///C:/Users/mkuczynski11/Desktop/magisterka/repos/OrleansTicket/OrleansTicket/Exception/ReservationExistsException.cs",
-                "region": {
-                  "startLine": 3,
-                  "startColumn": 12,
-                  "endLine": 3,
-                  "endColumn": 17
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1,
-            "customProperties": {
-              "0": "Add 'System.SerializableAttribute' attribute on 'ReservationExistsException' because it implements 'ISerializable'.",
-              "1": "Add a 'protected' constructor 'ReservationExistsException(SerializationInfo, StreamingContext)'."
-            }
-          }
-        },
-        {
-          "ruleId": "S3925",
-          "level": "warning",
-          "message": "Update this implementation of 'ISerializable' to conform to the recommended serialization pattern.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/Users/mkuczynski11/Desktop/magisterka/repos/OrleansTicket/OrleansTicket/Exception/ReservationDoesNotExistException.cs",
-                "region": {
-                  "startLine": 3,
-                  "startColumn": 18,
-                  "endLine": 3,
+                  "startLine": 21,
+                  "startColumn": 43,
+                  "endLine": 21,
                   "endColumn": 50
                 }
               }
             }
           ],
-          "relatedLocations": [
-            {
-              "physicalLocation": {
-                "uri": "file:///C:/Users/mkuczynski11/Desktop/magisterka/repos/OrleansTicket/OrleansTicket/Exception/ReservationDoesNotExistException.cs",
-                "region": {
-                  "startLine": 3,
-                  "startColumn": 12,
-                  "endLine": 3,
-                  "endColumn": 17
-                }
-              }
-            },
-            {
-              "physicalLocation": {
-                "uri": "file:///C:/Users/mkuczynski11/Desktop/magisterka/repos/OrleansTicket/OrleansTicket/Exception/ReservationDoesNotExistException.cs",
-                "region": {
-                  "startLine": 3,
-                  "startColumn": 12,
-                  "endLine": 3,
-                  "endColumn": 17
-                }
-              }
-            }
-          ],
           "properties": {
-            "warningLevel": 1,
-            "customProperties": {
-              "0": "Add 'System.SerializableAttribute' attribute on 'ReservationDoesNotExistException' because it implements 'ISerializable'.",
-              "1": "Add a 'protected' constructor 'ReservationDoesNotExistException(SerializationInfo, StreamingContext)'."
-            }
-          }
-        },
-        {
-          "ruleId": "S3925",
-          "level": "warning",
-          "message": "Update this implementation of 'ISerializable' to conform to the recommended serialization pattern.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/Users/mkuczynski11/Desktop/magisterka/repos/OrleansTicket/OrleansTicket/Exception/UserExistsException.cs",
-                "region": {
-                  "startLine": 3,
-                  "startColumn": 18,
-                  "endLine": 3,
-                  "endColumn": 37
-                }
-              }
-            }
-          ],
-          "relatedLocations": [
-            {
-              "physicalLocation": {
-                "uri": "file:///C:/Users/mkuczynski11/Desktop/magisterka/repos/OrleansTicket/OrleansTicket/Exception/UserExistsException.cs",
-                "region": {
-                  "startLine": 3,
-                  "startColumn": 12,
-                  "endLine": 3,
-                  "endColumn": 17
-                }
-              }
-            },
-            {
-              "physicalLocation": {
-                "uri": "file:///C:/Users/mkuczynski11/Desktop/magisterka/repos/OrleansTicket/OrleansTicket/Exception/UserExistsException.cs",
-                "region": {
-                  "startLine": 3,
-                  "startColumn": 12,
-                  "endLine": 3,
-                  "endColumn": 17
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1,
-            "customProperties": {
-              "0": "Add 'System.SerializableAttribute' attribute on 'UserExistsException' because it implements 'ISerializable'.",
-              "1": "Add a 'protected' constructor 'UserExistsException(SerializationInfo, StreamingContext)'."
-            }
+            "warningLevel": 1
           }
         },
         {
@@ -1049,797 +1198,18 @@
           }
         },
         {
-          "ruleId": "S101",
-          "level": "warning",
-          "message": "Rename class 'CreateEventSeatDTO' to match pascal case naming rules, consider using 'CreateEventSeatDto'.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/Users/mkuczynski11/Desktop/magisterka/repos/OrleansTicket/OrleansTicket/DTO/CreateEventSeatDTO.cs",
-                "region": {
-                  "startLine": 3,
-                  "startColumn": 25,
-                  "endLine": 3,
-                  "endColumn": 43
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S101",
-          "level": "warning",
-          "message": "Rename class 'CreateReservationDTO' to match pascal case naming rules, consider using 'CreateReservationDto'.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/Users/mkuczynski11/Desktop/magisterka/repos/OrleansTicket/OrleansTicket/DTO/CreateReservationDTO.cs",
-                "region": {
-                  "startLine": 3,
-                  "startColumn": 25,
-                  "endLine": 3,
-                  "endColumn": 45
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S101",
-          "level": "warning",
-          "message": "Rename class 'CreateUserDTO' to match pascal case naming rules, consider using 'CreateUserDto'.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/Users/mkuczynski11/Desktop/magisterka/repos/OrleansTicket/OrleansTicket/DTO/CreateUserDTO.cs",
-                "region": {
-                  "startLine": 3,
-                  "startColumn": 25,
-                  "endLine": 3,
-                  "endColumn": 38
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S101",
-          "level": "warning",
-          "message": "Rename class 'GetEventDataDTO' to match pascal case naming rules, consider using 'GetEventDataDto'.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/Users/mkuczynski11/Desktop/magisterka/repos/OrleansTicket/OrleansTicket/DTO/GetEventDataDTO.cs",
-                "region": {
-                  "startLine": 3,
-                  "startColumn": 25,
-                  "endLine": 3,
-                  "endColumn": 40
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S1135",
-          "level": "warning",
-          "message": "Complete the task associated to this 'TODO' comment.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/Users/mkuczynski11/Desktop/magisterka/repos/OrleansTicket/OrleansTicket/Actors/Event.cs",
-                "region": {
-                  "startLine": 98,
-                  "startColumn": 16,
-                  "endLine": 98,
-                  "endColumn": 20
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S101",
-          "level": "warning",
-          "message": "Rename class 'GetEventSeatDTO' to match pascal case naming rules, consider using 'GetEventSeatDto'.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/Users/mkuczynski11/Desktop/magisterka/repos/OrleansTicket/OrleansTicket/DTO/GetEventSeatDTO.cs",
-                "region": {
-                  "startLine": 3,
-                  "startColumn": 25,
-                  "endLine": 3,
-                  "endColumn": 40
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S101",
-          "level": "warning",
-          "message": "Rename class 'GetReservationDataDTO' to match pascal case naming rules, consider using 'GetReservationDataDto'.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/Users/mkuczynski11/Desktop/magisterka/repos/OrleansTicket/OrleansTicket/DTO/GetReservationDataDTO.cs",
-                "region": {
-                  "startLine": 3,
-                  "startColumn": 25,
-                  "endLine": 3,
-                  "endColumn": 46
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S1135",
-          "level": "warning",
-          "message": "Complete the task associated to this 'TODO' comment.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/Users/mkuczynski11/Desktop/magisterka/repos/OrleansTicket/OrleansTicket/Controllers/ApiController.cs",
-                "region": {
-                  "startLine": 85,
-                  "startColumn": 20,
-                  "endLine": 85,
-                  "endColumn": 24
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "ORLEANS0010",
-          "level": "note",
-          "message": "Add missing alias attributes",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/Users/mkuczynski11/Desktop/magisterka/repos/OrleansTicket/OrleansTicket/Actors/EventRepository.cs",
-                "region": {
-                  "startLine": 5,
-                  "startColumn": 5,
-                  "endLine": 9,
-                  "endColumn": 6
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1,
-            "customProperties": {
-              "Arity": "0",
-              "NamespaceAndNesting": "OrleansTicket.Actors",
-              "TypeName": "IEventRepositoryGrain"
-            }
-          }
-        },
-        {
-          "ruleId": "ORLEANS0010",
-          "level": "note",
-          "message": "Add missing alias attributes",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/Users/mkuczynski11/Desktop/magisterka/repos/OrleansTicket/OrleansTicket/Actors/EventRepository.cs",
-                "region": {
-                  "startLine": 7,
-                  "startColumn": 9,
-                  "endLine": 7,
-                  "endColumn": 37
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1,
-            "customProperties": {
-              "Arity": "0",
-              "NamespaceAndNesting": null,
-              "TypeName": "AddEvent"
-            }
-          }
-        },
-        {
-          "ruleId": "ORLEANS0010",
-          "level": "note",
-          "message": "Add missing alias attributes",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/Users/mkuczynski11/Desktop/magisterka/repos/OrleansTicket/OrleansTicket/Actors/EventRepository.cs",
-                "region": {
-                  "startLine": 8,
-                  "startColumn": 9,
-                  "endLine": 8,
-                  "endColumn": 57
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1,
-            "customProperties": {
-              "Arity": "0",
-              "NamespaceAndNesting": null,
-              "TypeName": "GetEvents"
-            }
-          }
-        },
-        {
           "ruleId": "S2933",
           "level": "warning",
           "message": "Make '_logger' 'readonly'.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/Users/mkuczynski11/Desktop/magisterka/repos/OrleansTicket/OrleansTicket/Actors/EventQuery.cs",
-                "region": {
-                  "startLine": 15,
-                  "startColumn": 29,
-                  "endLine": 15,
-                  "endColumn": 36
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S125",
-          "level": "warning",
-          "message": "Remove this commented out code.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/Users/mkuczynski11/Desktop/magisterka/repos/OrleansTicket/OrleansTicket/Program.cs",
-                "region": {
-                  "startLine": 31,
-                  "startColumn": 5,
-                  "endLine": 31,
-                  "endColumn": 50
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S2933",
-          "level": "warning",
-          "message": "Make '_logger' 'readonly'.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/Users/mkuczynski11/Desktop/magisterka/repos/OrleansTicket/OrleansTicket/Actors/Event.cs",
-                "region": {
-                  "startLine": 25,
-                  "startColumn": 29,
-                  "endLine": 25,
-                  "endColumn": 36
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S2933",
-          "level": "warning",
-          "message": "Make '_seatList' 'readonly'.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/Users/mkuczynski11/Desktop/magisterka/repos/OrleansTicket/OrleansTicket/Actors/Event.cs",
-                "region": {
-                  "startLine": 36,
-                  "startColumn": 28,
-                  "endLine": 36,
-                  "endColumn": 37
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S2933",
-          "level": "warning",
-          "message": "Make '_seatIdToReservation' 'readonly'.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/Users/mkuczynski11/Desktop/magisterka/repos/OrleansTicket/OrleansTicket/Actors/Event.cs",
-                "region": {
-                  "startLine": 37,
-                  "startColumn": 55,
-                  "endLine": 37,
-                  "endColumn": 75
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S101",
-          "level": "warning",
-          "message": "Rename class 'GetEventsDataDTO' to match pascal case naming rules, consider using 'GetEventsDataDto'.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/Users/mkuczynski11/Desktop/magisterka/repos/OrleansTicket/OrleansTicket/DTO/GetEventsDataDTO.cs",
-                "region": {
-                  "startLine": 3,
-                  "startColumn": 25,
-                  "endLine": 3,
-                  "endColumn": 41
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S101",
-          "level": "warning",
-          "message": "Rename class 'UpdateUserDTO' to match pascal case naming rules, consider using 'UpdateUserDto'.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/Users/mkuczynski11/Desktop/magisterka/repos/OrleansTicket/OrleansTicket/DTO/UpdateUserDTO.cs",
-                "region": {
-                  "startLine": 3,
-                  "startColumn": 25,
-                  "endLine": 3,
-                  "endColumn": 38
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S101",
-          "level": "warning",
-          "message": "Rename class 'UpdateEventDTO' to match pascal case naming rules, consider using 'UpdateEventDto'.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/Users/mkuczynski11/Desktop/magisterka/repos/OrleansTicket/OrleansTicket/DTO/UpdateEventDTO.cs",
-                "region": {
-                  "startLine": 3,
-                  "startColumn": 25,
-                  "endLine": 3,
-                  "endColumn": 39
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "ORLEANS0010",
-          "level": "note",
-          "message": "Add missing alias attributes",
           "locations": [
             {
               "resultFile": {
                 "uri": "file:///C:/Users/mkuczynski11/Desktop/magisterka/repos/OrleansTicket/OrleansTicket/Actors/ExchangeCurrency.cs",
                 "region": {
-                  "startLine": 5,
-                  "startColumn": 5,
-                  "endLine": 8,
-                  "endColumn": 6
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1,
-            "customProperties": {
-              "Arity": "0",
-              "NamespaceAndNesting": "OrleansTicket.Actors",
-              "TypeName": "IExchangeCurrencyGrain"
-            }
-          }
-        },
-        {
-          "ruleId": "ORLEANS0010",
-          "level": "note",
-          "message": "Add missing alias attributes",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/Users/mkuczynski11/Desktop/magisterka/repos/OrleansTicket/OrleansTicket/Actors/ExchangeCurrency.cs",
-                "region": {
-                  "startLine": 7,
-                  "startColumn": 9,
-                  "endLine": 7,
-                  "endColumn": 67
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1,
-            "customProperties": {
-              "Arity": "0",
-              "NamespaceAndNesting": null,
-              "TypeName": "Exchange"
-            }
-          }
-        },
-        {
-          "ruleId": "S101",
-          "level": "warning",
-          "message": "Rename class 'CreateEventDTO' to match pascal case naming rules, consider using 'CreateEventDto'.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/Users/mkuczynski11/Desktop/magisterka/repos/OrleansTicket/OrleansTicket/DTO/CreateEventDTO.cs",
-                "region": {
-                  "startLine": 3,
-                  "startColumn": 25,
-                  "endLine": 3,
-                  "endColumn": 39
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S101",
-          "level": "warning",
-          "message": "Rename class 'GetUserDataDTO' to match pascal case naming rules, consider using 'GetUserDataDto'.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/Users/mkuczynski11/Desktop/magisterka/repos/OrleansTicket/OrleansTicket/DTO/GetUserDataDTO.cs",
-                "region": {
-                  "startLine": 3,
-                  "startColumn": 25,
-                  "endLine": 3,
-                  "endColumn": 39
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "ORLEANS0010",
-          "level": "note",
-          "message": "Add missing alias attributes",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/Users/mkuczynski11/Desktop/magisterka/repos/OrleansTicket/OrleansTicket/Actors/EventQuery.cs",
-                "region": {
-                  "startLine": 6,
-                  "startColumn": 5,
-                  "endLine": 9,
-                  "endColumn": 6
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1,
-            "customProperties": {
-              "Arity": "0",
-              "NamespaceAndNesting": "OrleansTicket.Actors",
-              "TypeName": "IEventQueryGrain"
-            }
-          }
-        },
-        {
-          "ruleId": "ORLEANS0010",
-          "level": "note",
-          "message": "Add missing alias attributes",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/Users/mkuczynski11/Desktop/magisterka/repos/OrleansTicket/OrleansTicket/Actors/EventQuery.cs",
-                "region": {
-                  "startLine": 8,
-                  "startColumn": 9,
-                  "endLine": 8,
-                  "endColumn": 64
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1,
-            "customProperties": {
-              "Arity": "0",
-              "NamespaceAndNesting": null,
-              "TypeName": "GetAllEvents"
-            }
-          }
-        },
-        {
-          "ruleId": "S101",
-          "level": "warning",
-          "message": "Rename class 'EventDTO' to match pascal case naming rules, consider using 'EventDto'.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/Users/mkuczynski11/Desktop/magisterka/repos/OrleansTicket/OrleansTicket/DTO/GetEventsDataDTO.cs",
-                "region": {
-                  "startLine": 9,
-                  "startColumn": 22,
-                  "endLine": 9,
-                  "endColumn": 30
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S2933",
-          "level": "warning",
-          "message": "Make '_logger' 'readonly'.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/Users/mkuczynski11/Desktop/magisterka/repos/OrleansTicket/OrleansTicket/Actors/EventRepository.cs",
-                "region": {
-                  "startLine": 15,
-                  "startColumn": 34,
-                  "endLine": 15,
-                  "endColumn": 41
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S2933",
-          "level": "warning",
-          "message": "Make '_events' 'readonly'.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/Users/mkuczynski11/Desktop/magisterka/repos/OrleansTicket/OrleansTicket/Actors/EventRepository.cs",
-                "region": {
-                  "startLine": 20,
-                  "startColumn": 48,
-                  "endLine": 20,
-                  "endColumn": 55
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "ORLEANS0010",
-          "level": "note",
-          "message": "Add missing alias attributes",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/Users/mkuczynski11/Desktop/magisterka/repos/OrleansTicket/OrleansTicket/Actors/Reservation.cs",
-                "region": {
-                  "startLine": 7,
-                  "startColumn": 5,
-                  "endLine": 14,
-                  "endColumn": 6
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1,
-            "customProperties": {
-              "Arity": "0",
-              "NamespaceAndNesting": "OrleansTicket.Actors",
-              "TypeName": "IReservationGrain"
-            }
-          }
-        },
-        {
-          "ruleId": "ORLEANS0010",
-          "level": "note",
-          "message": "Add missing alias attributes",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/Users/mkuczynski11/Desktop/magisterka/repos/OrleansTicket/OrleansTicket/Actors/Reservation.cs",
-                "region": {
-                  "startLine": 9,
-                  "startColumn": 9,
-                  "endLine": 9,
-                  "endColumn": 77
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1,
-            "customProperties": {
-              "Arity": "0",
-              "NamespaceAndNesting": null,
-              "TypeName": "ReserveSeat"
-            }
-          }
-        },
-        {
-          "ruleId": "ORLEANS0010",
-          "level": "note",
-          "message": "Add missing alias attributes",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/Users/mkuczynski11/Desktop/magisterka/repos/OrleansTicket/OrleansTicket/Actors/Reservation.cs",
-                "region": {
-                  "startLine": 10,
-                  "startColumn": 9,
-                  "endLine": 10,
-                  "endColumn": 55
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1,
-            "customProperties": {
-              "Arity": "0",
-              "NamespaceAndNesting": null,
-              "TypeName": "GetReservationInfo"
-            }
-          }
-        },
-        {
-          "ruleId": "ORLEANS0010",
-          "level": "note",
-          "message": "Add missing alias attributes",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/Users/mkuczynski11/Desktop/magisterka/repos/OrleansTicket/OrleansTicket/Actors/Reservation.cs",
-                "region": {
-                  "startLine": 11,
-                  "startColumn": 9,
-                  "endLine": 11,
-                  "endColumn": 34
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1,
-            "customProperties": {
-              "Arity": "0",
-              "NamespaceAndNesting": null,
-              "TypeName": "CancelReservation"
-            }
-          }
-        },
-        {
-          "ruleId": "ORLEANS0010",
-          "level": "note",
-          "message": "Add missing alias attributes",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/Users/mkuczynski11/Desktop/magisterka/repos/OrleansTicket/OrleansTicket/Actors/Reservation.cs",
-                "region": {
-                  "startLine": 12,
-                  "startColumn": 9,
-                  "endLine": 12,
-                  "endColumn": 34
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1,
-            "customProperties": {
-              "Arity": "0",
-              "NamespaceAndNesting": null,
-              "TypeName": "EventChangeAction"
-            }
-          }
-        },
-        {
-          "ruleId": "ORLEANS0010",
-          "level": "note",
-          "message": "Add missing alias attributes",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/Users/mkuczynski11/Desktop/magisterka/repos/OrleansTicket/OrleansTicket/Actors/Reservation.cs",
-                "region": {
-                  "startLine": 13,
-                  "startColumn": 9,
-                  "endLine": 13,
-                  "endColumn": 37
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1,
-            "customProperties": {
-              "Arity": "0",
-              "NamespaceAndNesting": null,
-              "TypeName": "EventCancelledAction"
-            }
-          }
-        },
-        {
-          "ruleId": "S2933",
-          "level": "warning",
-          "message": "Make '_logger' 'readonly'.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/Users/mkuczynski11/Desktop/magisterka/repos/OrleansTicket/OrleansTicket/Actors/Reservation.cs",
-                "region": {
-                  "startLine": 21,
-                  "startColumn": 43,
-                  "endLine": 21,
-                  "endColumn": 50
+                  "startLine": 16,
+                  "startColumn": 35,
+                  "endLine": 16,
+                  "endColumn": 42
                 }
               }
             }
@@ -2005,18 +1375,18 @@
           }
         },
         {
-          "ruleId": "S2933",
+          "ruleId": "S101",
           "level": "warning",
-          "message": "Make '_logger' 'readonly'.",
+          "message": "Rename class 'GetEventDataDTO' to match pascal case naming rules, consider using 'GetEventDataDto'.",
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///C:/Users/mkuczynski11/Desktop/magisterka/repos/OrleansTicket/OrleansTicket/Actors/ExchangeCurrency.cs",
+                "uri": "file:///C:/Users/mkuczynski11/Desktop/magisterka/repos/OrleansTicket/OrleansTicket/DTO/GetEventDataDTO.cs",
                 "region": {
-                  "startLine": 16,
-                  "startColumn": 35,
-                  "endLine": 16,
-                  "endColumn": 42
+                  "startLine": 3,
+                  "startColumn": 25,
+                  "endLine": 3,
+                  "endColumn": 40
                 }
               }
             }
@@ -2026,18 +1396,242 @@
           }
         },
         {
-          "ruleId": "S3604",
+          "ruleId": "S101",
           "level": "warning",
-          "message": "Remove the member initializer, all constructors set an initial value for the member.",
+          "message": "Rename class 'GetEventSeatDTO' to match pascal case naming rules, consider using 'GetEventSeatDto'.",
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///C:/Users/mkuczynski11/Desktop/magisterka/repos/OrleansTicket/OrleansTicket/Actors/User.cs",
+                "uri": "file:///C:/Users/mkuczynski11/Desktop/magisterka/repos/OrleansTicket/OrleansTicket/DTO/GetEventSeatDTO.cs",
                 "region": {
-                  "startLine": 26,
-                  "startColumn": 57,
-                  "endLine": 26,
-                  "endColumn": 64
+                  "startLine": 3,
+                  "startColumn": 25,
+                  "endLine": 3,
+                  "endColumn": 40
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S101",
+          "level": "warning",
+          "message": "Rename class 'CreateEventDTO' to match pascal case naming rules, consider using 'CreateEventDto'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/mkuczynski11/Desktop/magisterka/repos/OrleansTicket/OrleansTicket/DTO/CreateEventDTO.cs",
+                "region": {
+                  "startLine": 3,
+                  "startColumn": 25,
+                  "endLine": 3,
+                  "endColumn": 39
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S101",
+          "level": "warning",
+          "message": "Rename class 'GetReservationDataDTO' to match pascal case naming rules, consider using 'GetReservationDataDto'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/mkuczynski11/Desktop/magisterka/repos/OrleansTicket/OrleansTicket/DTO/GetReservationDataDTO.cs",
+                "region": {
+                  "startLine": 3,
+                  "startColumn": 25,
+                  "endLine": 3,
+                  "endColumn": 46
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S101",
+          "level": "warning",
+          "message": "Rename class 'CreateReservationDTO' to match pascal case naming rules, consider using 'CreateReservationDto'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/mkuczynski11/Desktop/magisterka/repos/OrleansTicket/OrleansTicket/DTO/CreateReservationDTO.cs",
+                "region": {
+                  "startLine": 3,
+                  "startColumn": 25,
+                  "endLine": 3,
+                  "endColumn": 45
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S101",
+          "level": "warning",
+          "message": "Rename class 'GetEventsDataDTO' to match pascal case naming rules, consider using 'GetEventsDataDto'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/mkuczynski11/Desktop/magisterka/repos/OrleansTicket/OrleansTicket/DTO/GetEventsDataDTO.cs",
+                "region": {
+                  "startLine": 3,
+                  "startColumn": 25,
+                  "endLine": 3,
+                  "endColumn": 41
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S101",
+          "level": "warning",
+          "message": "Rename class 'UpdateUserDTO' to match pascal case naming rules, consider using 'UpdateUserDto'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/mkuczynski11/Desktop/magisterka/repos/OrleansTicket/OrleansTicket/DTO/UpdateUserDTO.cs",
+                "region": {
+                  "startLine": 3,
+                  "startColumn": 25,
+                  "endLine": 3,
+                  "endColumn": 38
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S101",
+          "level": "warning",
+          "message": "Rename class 'UpdateEventDTO' to match pascal case naming rules, consider using 'UpdateEventDto'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/mkuczynski11/Desktop/magisterka/repos/OrleansTicket/OrleansTicket/DTO/UpdateEventDTO.cs",
+                "region": {
+                  "startLine": 3,
+                  "startColumn": 25,
+                  "endLine": 3,
+                  "endColumn": 39
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S101",
+          "level": "warning",
+          "message": "Rename class 'EventDTO' to match pascal case naming rules, consider using 'EventDto'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/mkuczynski11/Desktop/magisterka/repos/OrleansTicket/OrleansTicket/DTO/GetEventsDataDTO.cs",
+                "region": {
+                  "startLine": 9,
+                  "startColumn": 22,
+                  "endLine": 9,
+                  "endColumn": 30
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S101",
+          "level": "warning",
+          "message": "Rename class 'GetUserDataDTO' to match pascal case naming rules, consider using 'GetUserDataDto'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/mkuczynski11/Desktop/magisterka/repos/OrleansTicket/OrleansTicket/DTO/GetUserDataDTO.cs",
+                "region": {
+                  "startLine": 3,
+                  "startColumn": 25,
+                  "endLine": 3,
+                  "endColumn": 39
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1192",
+          "level": "warning",
+          "message": "Define a constant instead of using this literal 'Event does not exist' 4 times.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/mkuczynski11/Desktop/magisterka/repos/OrleansTicket/OrleansTicket/Controllers/ApiController.cs",
+                "region": {
+                  "startLine": 86,
+                  "startColumn": 46,
+                  "endLine": 86,
+                  "endColumn": 68
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/mkuczynski11/Desktop/magisterka/repos/OrleansTicket/OrleansTicket/Controllers/ApiController.cs",
+                "region": {
+                  "startLine": 113,
+                  "startColumn": 46,
+                  "endLine": 113,
+                  "endColumn": 68
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/mkuczynski11/Desktop/magisterka/repos/OrleansTicket/OrleansTicket/Controllers/ApiController.cs",
+                "region": {
+                  "startLine": 129,
+                  "startColumn": 46,
+                  "endLine": 129,
+                  "endColumn": 68
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/mkuczynski11/Desktop/magisterka/repos/OrleansTicket/OrleansTicket/Controllers/ApiController.cs",
+                "region": {
+                  "startLine": 160,
+                  "startColumn": 46,
+                  "endLine": 160,
+                  "endColumn": 68
                 }
               }
             }
@@ -2080,6 +1674,27 @@
                   "startColumn": 31,
                   "endLine": 6,
                   "endColumn": 43
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S3928",
+          "level": "warning",
+          "message": "Use a constructor overloads that allows a more meaningful exception message to be provided.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/mkuczynski11/Desktop/magisterka/repos/OrleansTicket/OrleansTicket/Actors/ExchangeCurrency.cs",
+                "region": {
+                  "startLine": 35,
+                  "startColumn": 27,
+                  "endLine": 35,
+                  "endColumn": 50
                 }
               }
             }
@@ -2152,228 +1767,18 @@
           }
         },
         {
-          "ruleId": "CA2254",
-          "level": "note",
-          "message": "The logging message template should not vary between calls to 'LoggerExtensions.LogInformation(ILogger, string?, params object?[])'",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/Users/mkuczynski11/Desktop/magisterka/repos/OrleansTicket/OrleansTicket/Controllers/ApiController.cs",
-                "region": {
-                  "startLine": 43,
-                  "startColumn": 36,
-                  "endLine": 43,
-                  "endColumn": 79
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CA2254",
-          "level": "note",
-          "message": "The logging message template should not vary between calls to 'LoggerExtensions.LogInformation(ILogger, string?, params object?[])'",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/Users/mkuczynski11/Desktop/magisterka/repos/OrleansTicket/OrleansTicket/Actors/User.cs",
-                "region": {
-                  "startLine": 29,
-                  "startColumn": 35,
-                  "endLine": 29,
-                  "endColumn": 88
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CA2254",
-          "level": "note",
-          "message": "The logging message template should not vary between calls to 'LoggerExtensions.LogInformation(ILogger, string?, params object?[])'",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/Users/mkuczynski11/Desktop/magisterka/repos/OrleansTicket/OrleansTicket/Actors/User.cs",
-                "region": {
-                  "startLine": 61,
-                  "startColumn": 35,
-                  "endLine": 61,
-                  "endColumn": 110
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CA2254",
-          "level": "note",
-          "message": "The logging message template should not vary between calls to 'LoggerExtensions.LogInformation(ILogger, string?, params object?[])'",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/Users/mkuczynski11/Desktop/magisterka/repos/OrleansTicket/OrleansTicket/Actors/User.cs",
-                "region": {
-                  "startLine": 48,
-                  "startColumn": 35,
-                  "endLine": 48,
-                  "endColumn": 89
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CA2254",
-          "level": "note",
-          "message": "The logging message template should not vary between calls to 'LoggerExtensions.LogInformation(ILogger, string?, params object?[])'",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/Users/mkuczynski11/Desktop/magisterka/repos/OrleansTicket/OrleansTicket/Controllers/ApiController.cs",
-                "region": {
-                  "startLine": 26,
-                  "startColumn": 36,
-                  "endLine": 26,
-                  "endColumn": 68
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CA2254",
-          "level": "note",
-          "message": "The logging message template should not vary between calls to 'LoggerExtensions.LogInformation(ILogger, string?, params object?[])'",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/Users/mkuczynski11/Desktop/magisterka/repos/OrleansTicket/OrleansTicket/Actors/User.cs",
-                "region": {
-                  "startLine": 74,
-                  "startColumn": 35,
-                  "endLine": 74,
-                  "endColumn": 88
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CA2254",
-          "level": "note",
-          "message": "The logging message template should not vary between calls to 'LoggerExtensions.LogInformation(ILogger, string?, params object?[])'",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/Users/mkuczynski11/Desktop/magisterka/repos/OrleansTicket/OrleansTicket/Actors/Event.cs",
-                "region": {
-                  "startLine": 75,
-                  "startColumn": 36,
-                  "endLine": 75,
-                  "endColumn": 98
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CA2254",
-          "level": "note",
-          "message": "The logging message template should not vary between calls to 'LoggerExtensions.LogInformation(ILogger, string?, params object?[])'",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/Users/mkuczynski11/Desktop/magisterka/repos/OrleansTicket/OrleansTicket/Actors/Event.cs",
-                "region": {
-                  "startLine": 42,
-                  "startColumn": 36,
-                  "endLine": 42,
-                  "endColumn": 64
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CA2254",
-          "level": "note",
-          "message": "The logging message template should not vary between calls to 'LoggerExtensions.LogInformation(ILogger, string?, params object?[])'",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/Users/mkuczynski11/Desktop/magisterka/repos/OrleansTicket/OrleansTicket/Actors/Event.cs",
-                "region": {
-                  "startLine": 63,
-                  "startColumn": 36,
-                  "endLine": 63,
-                  "endColumn": 90
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CA2254",
-          "level": "note",
-          "message": "The logging message template should not vary between calls to 'LoggerExtensions.LogInformation(ILogger, string?, params object?[])'",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/Users/mkuczynski11/Desktop/magisterka/repos/OrleansTicket/OrleansTicket/Controllers/ApiController.cs",
-                "region": {
-                  "startLine": 59,
-                  "startColumn": 36,
-                  "endLine": 59,
-                  "endColumn": 69
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S112",
+          "ruleId": "S6667",
           "level": "warning",
-          "message": "'System.Exception' should not be thrown by user code.",
+          "message": "Logging in a catch clause should pass the caught exception as a parameter.",
           "locations": [
             {
               "resultFile": {
                 "uri": "file:///C:/Users/mkuczynski11/Desktop/magisterka/repos/OrleansTicket/OrleansTicket/Actors/EventQuery.cs",
                 "region": {
-                  "startLine": 40,
-                  "startColumn": 19,
-                  "endLine": 40,
-                  "endColumn": 68
+                  "startLine": 35,
+                  "startColumn": 21,
+                  "endLine": 35,
+                  "endColumn": 78
                 }
               }
             }
@@ -2383,18 +1788,18 @@
           }
         },
         {
-          "ruleId": "CA2254",
-          "level": "note",
-          "message": "The logging message template should not vary between calls to 'LoggerExtensions.LogInformation(ILogger, string?, params object?[])'",
+          "ruleId": "S2629",
+          "level": "warning",
+          "message": "Don't use string interpolation in logging message templates.",
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///C:/Users/mkuczynski11/Desktop/magisterka/repos/OrleansTicket/OrleansTicket/Actors/EventQuery.cs",
+                "uri": "file:///C:/Users/mkuczynski11/Desktop/magisterka/repos/OrleansTicket/OrleansTicket/Actors/EventRepository.cs",
                 "region": {
-                  "startLine": 25,
+                  "startLine": 23,
                   "startColumn": 36,
-                  "endLine": 25,
-                  "endColumn": 83
+                  "endLine": 23,
+                  "endColumn": 61
                 }
               }
             }
@@ -2425,227 +1830,17 @@
           }
         },
         {
-          "ruleId": "CA2254",
-          "level": "note",
-          "message": "The logging message template should not vary between calls to 'LoggerExtensions.LogInformation(ILogger, string?, params object?[])'",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/Users/mkuczynski11/Desktop/magisterka/repos/OrleansTicket/OrleansTicket/Actors/Reservation.cs",
-                "region": {
-                  "startLine": 64,
-                  "startColumn": 36,
-                  "endLine": 64,
-                  "endColumn": 96
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CA2254",
-          "level": "note",
-          "message": "The logging message template should not vary between calls to 'LoggerExtensions.LogInformation(ILogger, string?, params object?[])'",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/Users/mkuczynski11/Desktop/magisterka/repos/OrleansTicket/OrleansTicket/Actors/Reservation.cs",
-                "region": {
-                  "startLine": 74,
-                  "startColumn": 36,
-                  "endLine": 74,
-                  "endColumn": 90
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CA2254",
-          "level": "note",
-          "message": "The logging message template should not vary between calls to 'LoggerExtensions.LogInformation(ILogger, string?, params object?[])'",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/Users/mkuczynski11/Desktop/magisterka/repos/OrleansTicket/OrleansTicket/Actors/Reservation.cs",
-                "region": {
-                  "startLine": 85,
-                  "startColumn": 36,
-                  "endLine": 85,
-                  "endColumn": 152
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CA2254",
-          "level": "note",
-          "message": "The logging message template should not vary between calls to 'LoggerExtensions.LogInformation(ILogger, string?, params object?[])'",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/Users/mkuczynski11/Desktop/magisterka/repos/OrleansTicket/OrleansTicket/Actors/Reservation.cs",
-                "region": {
-                  "startLine": 33,
-                  "startColumn": 36,
-                  "endLine": 33,
-                  "endColumn": 99
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CA2254",
-          "level": "note",
-          "message": "The logging message template should not vary between calls to 'LoggerExtensions.LogInformation(ILogger, string?, params object?[])'",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/Users/mkuczynski11/Desktop/magisterka/repos/OrleansTicket/OrleansTicket/Actors/Reservation.cs",
-                "region": {
-                  "startLine": 91,
-                  "startColumn": 36,
-                  "endLine": 91,
-                  "endColumn": 165
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CA2254",
-          "level": "note",
-          "message": "The logging message template should not vary between calls to 'LoggerExtensions.LogInformation(ILogger, string?, params object?[])'",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/Users/mkuczynski11/Desktop/magisterka/repos/OrleansTicket/OrleansTicket/Controllers/ApiController.cs",
-                "region": {
-                  "startLine": 75,
-                  "startColumn": 36,
-                  "endLine": 75,
-                  "endColumn": 66
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CA2254",
-          "level": "note",
-          "message": "The logging message template should not vary between calls to 'LoggerExtensions.LogInformation(ILogger, string?, params object?[])'",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/Users/mkuczynski11/Desktop/magisterka/repos/OrleansTicket/OrleansTicket/Actors/Event.cs",
-                "region": {
-                  "startLine": 92,
-                  "startColumn": 36,
-                  "endLine": 92,
-                  "endColumn": 95
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S3928",
+          "ruleId": "S2629",
           "level": "warning",
-          "message": "Use a constructor overloads that allows a more meaningful exception message to be provided.",
+          "message": "Don't use string interpolation in logging message templates.",
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///C:/Users/mkuczynski11/Desktop/magisterka/repos/OrleansTicket/OrleansTicket/Actors/ExchangeCurrency.cs",
+                "uri": "file:///C:/Users/mkuczynski11/Desktop/magisterka/repos/OrleansTicket/OrleansTicket/Actors/User.cs",
                 "region": {
-                  "startLine": 35,
-                  "startColumn": 27,
-                  "endLine": 35,
-                  "endColumn": 50
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CA2254",
-          "level": "note",
-          "message": "The logging message template should not vary between calls to 'LoggerExtensions.LogInformation(ILogger, string?, params object?[])'",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/Users/mkuczynski11/Desktop/magisterka/repos/OrleansTicket/OrleansTicket/Controllers/ApiController.cs",
-                "region": {
-                  "startLine": 104,
-                  "startColumn": 36,
-                  "endLine": 104,
-                  "endColumn": 60
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CA2254",
-          "level": "note",
-          "message": "The logging message template should not vary between calls to 'LoggerExtensions.LogInformation(ILogger, string?, params object?[])'",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/Users/mkuczynski11/Desktop/magisterka/repos/OrleansTicket/OrleansTicket/Controllers/ApiController.cs",
-                "region": {
-                  "startLine": 93,
-                  "startColumn": 36,
-                  "endLine": 93,
-                  "endColumn": 86
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CA2254",
-          "level": "note",
-          "message": "The logging message template should not vary between calls to 'LoggerExtensions.LogInformation(ILogger, string?, params object?[])'",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/Users/mkuczynski11/Desktop/magisterka/repos/OrleansTicket/OrleansTicket/Actors/Event.cs",
-                "region": {
-                  "startLine": 128,
-                  "startColumn": 36,
-                  "endLine": 128,
+                  "startLine": 29,
+                  "startColumn": 35,
+                  "endLine": 29,
                   "endColumn": 88
                 }
               }
@@ -2662,12 +1857,12 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///C:/Users/mkuczynski11/Desktop/magisterka/repos/OrleansTicket/OrleansTicket/Controllers/ApiController.cs",
+                "uri": "file:///C:/Users/mkuczynski11/Desktop/magisterka/repos/OrleansTicket/OrleansTicket/Actors/User.cs",
                 "region": {
-                  "startLine": 120,
-                  "startColumn": 36,
-                  "endLine": 120,
-                  "endColumn": 67
+                  "startLine": 29,
+                  "startColumn": 35,
+                  "endLine": 29,
+                  "endColumn": 88
                 }
               }
             }
@@ -2677,18 +1872,18 @@
           }
         },
         {
-          "ruleId": "S1481",
+          "ruleId": "S2629",
           "level": "warning",
-          "message": "Remove the unused local variable 'eventInfo'.",
+          "message": "Don't use string interpolation in logging message templates.",
           "locations": [
             {
               "resultFile": {
                 "uri": "file:///C:/Users/mkuczynski11/Desktop/magisterka/repos/OrleansTicket/OrleansTicket/Controllers/ApiController.cs",
                 "region": {
-                  "startLine": 124,
-                  "startColumn": 21,
-                  "endLine": 124,
-                  "endColumn": 30
+                  "startLine": 26,
+                  "startColumn": 36,
+                  "endLine": 26,
+                  "endColumn": 68
                 }
               }
             }
@@ -2698,42 +1893,186 @@
           }
         },
         {
-          "ruleId": "CA1853",
+          "ruleId": "CA2254",
           "level": "note",
-          "message": "Do not guard 'Dictionary.Remove(key)' with 'Dictionary.ContainsKey(key)'",
+          "message": "The logging message template should not vary between calls to 'LoggerExtensions.LogInformation(ILogger, string?, params object?[])'",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/mkuczynski11/Desktop/magisterka/repos/OrleansTicket/OrleansTicket/Controllers/ApiController.cs",
+                "region": {
+                  "startLine": 26,
+                  "startColumn": 36,
+                  "endLine": 26,
+                  "endColumn": 68
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2629",
+          "level": "warning",
+          "message": "Don't use string interpolation in logging message templates.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/mkuczynski11/Desktop/magisterka/repos/OrleansTicket/OrleansTicket/Actors/User.cs",
+                "region": {
+                  "startLine": 48,
+                  "startColumn": 35,
+                  "endLine": 48,
+                  "endColumn": 89
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA2254",
+          "level": "note",
+          "message": "The logging message template should not vary between calls to 'LoggerExtensions.LogInformation(ILogger, string?, params object?[])'",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/mkuczynski11/Desktop/magisterka/repos/OrleansTicket/OrleansTicket/Actors/User.cs",
+                "region": {
+                  "startLine": 48,
+                  "startColumn": 35,
+                  "endLine": 48,
+                  "endColumn": 89
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2629",
+          "level": "warning",
+          "message": "Don't use string interpolation in logging message templates.",
           "locations": [
             {
               "resultFile": {
                 "uri": "file:///C:/Users/mkuczynski11/Desktop/magisterka/repos/OrleansTicket/OrleansTicket/Actors/Event.cs",
                 "region": {
-                  "startLine": 180,
-                  "startColumn": 17,
-                  "endLine": 180,
+                  "startLine": 75,
+                  "startColumn": 36,
+                  "endLine": 75,
+                  "endColumn": 98
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2629",
+          "level": "warning",
+          "message": "Don't use string interpolation in logging message templates.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/mkuczynski11/Desktop/magisterka/repos/OrleansTicket/OrleansTicket/Actors/Event.cs",
+                "region": {
+                  "startLine": 63,
+                  "startColumn": 36,
+                  "endLine": 63,
+                  "endColumn": 90
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA2254",
+          "level": "note",
+          "message": "The logging message template should not vary between calls to 'LoggerExtensions.LogInformation(ILogger, string?, params object?[])'",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/mkuczynski11/Desktop/magisterka/repos/OrleansTicket/OrleansTicket/Actors/Event.cs",
+                "region": {
+                  "startLine": 75,
+                  "startColumn": 36,
+                  "endLine": 75,
+                  "endColumn": 98
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2629",
+          "level": "warning",
+          "message": "Don't use string interpolation in logging message templates.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/mkuczynski11/Desktop/magisterka/repos/OrleansTicket/OrleansTicket/Actors/EventRepository.cs",
+                "region": {
+                  "startLine": 29,
+                  "startColumn": 36,
+                  "endLine": 29,
                   "endColumn": 57
                 }
               }
             }
           ],
-          "relatedLocations": [
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2629",
+          "level": "warning",
+          "message": "Don't use string interpolation in logging message templates.",
+          "locations": [
             {
-              "physicalLocation": {
-                "uri": "file:///C:/Users/mkuczynski11/Desktop/magisterka/repos/OrleansTicket/OrleansTicket/Actors/Event.cs",
+              "resultFile": {
+                "uri": "file:///C:/Users/mkuczynski11/Desktop/magisterka/repos/OrleansTicket/OrleansTicket/Actors/ExchangeCurrency.cs",
                 "region": {
-                  "startLine": 180,
-                  "startColumn": 13,
-                  "endLine": 183,
-                  "endColumn": 14
+                  "startLine": 25,
+                  "startColumn": 36,
+                  "endLine": 25,
+                  "endColumn": 64
                 }
               }
-            },
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2629",
+          "level": "warning",
+          "message": "Don't use string interpolation in logging message templates.",
+          "locations": [
             {
-              "physicalLocation": {
-                "uri": "file:///C:/Users/mkuczynski11/Desktop/magisterka/repos/OrleansTicket/OrleansTicket/Actors/Event.cs",
+              "resultFile": {
+                "uri": "file:///C:/Users/mkuczynski11/Desktop/magisterka/repos/OrleansTicket/OrleansTicket/Actors/Reservation.cs",
                 "region": {
-                  "startLine": 182,
-                  "startColumn": 17,
-                  "endLine": 182,
-                  "endColumn": 53
+                  "startLine": 64,
+                  "startColumn": 36,
+                  "endLine": 64,
+                  "endColumn": 96
                 }
               }
             }
@@ -2791,12 +2130,537 @@
           "locations": [
             {
               "resultFile": {
+                "uri": "file:///C:/Users/mkuczynski11/Desktop/magisterka/repos/OrleansTicket/OrleansTicket/Actors/Reservation.cs",
+                "region": {
+                  "startLine": 64,
+                  "startColumn": 36,
+                  "endLine": 64,
+                  "endColumn": 96
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA2254",
+          "level": "note",
+          "message": "The logging message template should not vary between calls to 'LoggerExtensions.LogInformation(ILogger, string?, params object?[])'",
+          "locations": [
+            {
+              "resultFile": {
                 "uri": "file:///C:/Users/mkuczynski11/Desktop/magisterka/repos/OrleansTicket/OrleansTicket/Actors/Event.cs",
                 "region": {
-                  "startLine": 174,
+                  "startLine": 63,
                   "startColumn": 36,
-                  "endLine": 174,
-                  "endColumn": 118
+                  "endLine": 63,
+                  "endColumn": 90
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S112",
+          "level": "warning",
+          "message": "'System.Exception' should not be thrown by user code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/mkuczynski11/Desktop/magisterka/repos/OrleansTicket/OrleansTicket/Actors/EventQuery.cs",
+                "region": {
+                  "startLine": 40,
+                  "startColumn": 19,
+                  "endLine": 40,
+                  "endColumn": 68
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2629",
+          "level": "warning",
+          "message": "Don't use string interpolation in logging message templates.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/mkuczynski11/Desktop/magisterka/repos/OrleansTicket/OrleansTicket/Actors/Event.cs",
+                "region": {
+                  "startLine": 42,
+                  "startColumn": 36,
+                  "endLine": 42,
+                  "endColumn": 64
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2629",
+          "level": "warning",
+          "message": "Don't use string interpolation in logging message templates.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/mkuczynski11/Desktop/magisterka/repos/OrleansTicket/OrleansTicket/Actors/User.cs",
+                "region": {
+                  "startLine": 61,
+                  "startColumn": 35,
+                  "endLine": 61,
+                  "endColumn": 110
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2629",
+          "level": "warning",
+          "message": "Don't use string interpolation in logging message templates.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/mkuczynski11/Desktop/magisterka/repos/OrleansTicket/OrleansTicket/Actors/Reservation.cs",
+                "region": {
+                  "startLine": 74,
+                  "startColumn": 36,
+                  "endLine": 74,
+                  "endColumn": 90
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA2254",
+          "level": "note",
+          "message": "The logging message template should not vary between calls to 'LoggerExtensions.LogInformation(ILogger, string?, params object?[])'",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/mkuczynski11/Desktop/magisterka/repos/OrleansTicket/OrleansTicket/Actors/Event.cs",
+                "region": {
+                  "startLine": 42,
+                  "startColumn": 36,
+                  "endLine": 42,
+                  "endColumn": 64
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA2254",
+          "level": "note",
+          "message": "The logging message template should not vary between calls to 'LoggerExtensions.LogInformation(ILogger, string?, params object?[])'",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/mkuczynski11/Desktop/magisterka/repos/OrleansTicket/OrleansTicket/Actors/User.cs",
+                "region": {
+                  "startLine": 61,
+                  "startColumn": 35,
+                  "endLine": 61,
+                  "endColumn": 110
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA2254",
+          "level": "note",
+          "message": "The logging message template should not vary between calls to 'LoggerExtensions.LogInformation(ILogger, string?, params object?[])'",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/mkuczynski11/Desktop/magisterka/repos/OrleansTicket/OrleansTicket/Actors/Reservation.cs",
+                "region": {
+                  "startLine": 74,
+                  "startColumn": 36,
+                  "endLine": 74,
+                  "endColumn": 90
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2629",
+          "level": "warning",
+          "message": "Don't use string interpolation in logging message templates.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/mkuczynski11/Desktop/magisterka/repos/OrleansTicket/OrleansTicket/Actors/Reservation.cs",
+                "region": {
+                  "startLine": 33,
+                  "startColumn": 36,
+                  "endLine": 33,
+                  "endColumn": 99
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2629",
+          "level": "warning",
+          "message": "Don't use string interpolation in logging message templates.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/mkuczynski11/Desktop/magisterka/repos/OrleansTicket/OrleansTicket/Actors/EventQuery.cs",
+                "region": {
+                  "startLine": 25,
+                  "startColumn": 36,
+                  "endLine": 25,
+                  "endColumn": 83
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2629",
+          "level": "warning",
+          "message": "Don't use string interpolation in logging message templates.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/mkuczynski11/Desktop/magisterka/repos/OrleansTicket/OrleansTicket/Controllers/ApiController.cs",
+                "region": {
+                  "startLine": 43,
+                  "startColumn": 36,
+                  "endLine": 43,
+                  "endColumn": 79
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2629",
+          "level": "warning",
+          "message": "Don't use string interpolation in logging message templates.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/mkuczynski11/Desktop/magisterka/repos/OrleansTicket/OrleansTicket/Actors/Reservation.cs",
+                "region": {
+                  "startLine": 85,
+                  "startColumn": 36,
+                  "endLine": 85,
+                  "endColumn": 152
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA2254",
+          "level": "note",
+          "message": "The logging message template should not vary between calls to 'LoggerExtensions.LogInformation(ILogger, string?, params object?[])'",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/mkuczynski11/Desktop/magisterka/repos/OrleansTicket/OrleansTicket/Actors/Reservation.cs",
+                "region": {
+                  "startLine": 85,
+                  "startColumn": 36,
+                  "endLine": 85,
+                  "endColumn": 152
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA2254",
+          "level": "note",
+          "message": "The logging message template should not vary between calls to 'LoggerExtensions.LogInformation(ILogger, string?, params object?[])'",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/mkuczynski11/Desktop/magisterka/repos/OrleansTicket/OrleansTicket/Controllers/ApiController.cs",
+                "region": {
+                  "startLine": 43,
+                  "startColumn": 36,
+                  "endLine": 43,
+                  "endColumn": 79
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA2254",
+          "level": "note",
+          "message": "The logging message template should not vary between calls to 'LoggerExtensions.LogInformation(ILogger, string?, params object?[])'",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/mkuczynski11/Desktop/magisterka/repos/OrleansTicket/OrleansTicket/Actors/Reservation.cs",
+                "region": {
+                  "startLine": 33,
+                  "startColumn": 36,
+                  "endLine": 33,
+                  "endColumn": 99
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2629",
+          "level": "warning",
+          "message": "Don't use string interpolation in logging message templates.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/mkuczynski11/Desktop/magisterka/repos/OrleansTicket/OrleansTicket/Actors/Reservation.cs",
+                "region": {
+                  "startLine": 91,
+                  "startColumn": 36,
+                  "endLine": 91,
+                  "endColumn": 165
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA2254",
+          "level": "note",
+          "message": "The logging message template should not vary between calls to 'LoggerExtensions.LogInformation(ILogger, string?, params object?[])'",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/mkuczynski11/Desktop/magisterka/repos/OrleansTicket/OrleansTicket/Actors/Reservation.cs",
+                "region": {
+                  "startLine": 91,
+                  "startColumn": 36,
+                  "endLine": 91,
+                  "endColumn": 165
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA2254",
+          "level": "note",
+          "message": "The logging message template should not vary between calls to 'LoggerExtensions.LogInformation(ILogger, string?, params object?[])'",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/mkuczynski11/Desktop/magisterka/repos/OrleansTicket/OrleansTicket/Actors/EventQuery.cs",
+                "region": {
+                  "startLine": 25,
+                  "startColumn": 36,
+                  "endLine": 25,
+                  "endColumn": 83
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2629",
+          "level": "warning",
+          "message": "Don't use string interpolation in logging message templates.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/mkuczynski11/Desktop/magisterka/repos/OrleansTicket/OrleansTicket/Actors/User.cs",
+                "region": {
+                  "startLine": 74,
+                  "startColumn": 35,
+                  "endLine": 74,
+                  "endColumn": 88
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA2254",
+          "level": "note",
+          "message": "The logging message template should not vary between calls to 'LoggerExtensions.LogInformation(ILogger, string?, params object?[])'",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/mkuczynski11/Desktop/magisterka/repos/OrleansTicket/OrleansTicket/Actors/User.cs",
+                "region": {
+                  "startLine": 74,
+                  "startColumn": 35,
+                  "endLine": 74,
+                  "endColumn": 88
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2629",
+          "level": "warning",
+          "message": "Don't use string interpolation in logging message templates.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/mkuczynski11/Desktop/magisterka/repos/OrleansTicket/OrleansTicket/Controllers/ApiController.cs",
+                "region": {
+                  "startLine": 59,
+                  "startColumn": 36,
+                  "endLine": 59,
+                  "endColumn": 69
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA2254",
+          "level": "note",
+          "message": "The logging message template should not vary between calls to 'LoggerExtensions.LogInformation(ILogger, string?, params object?[])'",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/mkuczynski11/Desktop/magisterka/repos/OrleansTicket/OrleansTicket/Controllers/ApiController.cs",
+                "region": {
+                  "startLine": 59,
+                  "startColumn": 36,
+                  "endLine": 59,
+                  "endColumn": 69
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2629",
+          "level": "warning",
+          "message": "Don't use string interpolation in logging message templates.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/mkuczynski11/Desktop/magisterka/repos/OrleansTicket/OrleansTicket/Controllers/ApiController.cs",
+                "region": {
+                  "startLine": 75,
+                  "startColumn": 36,
+                  "endLine": 75,
+                  "endColumn": 66
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA2254",
+          "level": "note",
+          "message": "The logging message template should not vary between calls to 'LoggerExtensions.LogInformation(ILogger, string?, params object?[])'",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/mkuczynski11/Desktop/magisterka/repos/OrleansTicket/OrleansTicket/Controllers/ApiController.cs",
+                "region": {
+                  "startLine": 75,
+                  "startColumn": 36,
+                  "endLine": 75,
+                  "endColumn": 66
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2629",
+          "level": "warning",
+          "message": "Don't use string interpolation in logging message templates.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/mkuczynski11/Desktop/magisterka/repos/OrleansTicket/OrleansTicket/Actors/ExchangeCurrency.cs",
+                "region": {
+                  "startLine": 40,
+                  "startColumn": 36,
+                  "endLine": 40,
+                  "endColumn": 77
                 }
               }
             }
@@ -2827,18 +2691,18 @@
           }
         },
         {
-          "ruleId": "S2245",
+          "ruleId": "S2629",
           "level": "warning",
-          "message": "Make sure that using this pseudorandom number generator is safe here.",
+          "message": "Don't use string interpolation in logging message templates.",
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///C:/Users/mkuczynski11/Desktop/magisterka/repos/OrleansTicket/OrleansTicket/Actors/EventQuery.cs",
+                "uri": "file:///C:/Users/mkuczynski11/Desktop/magisterka/repos/OrleansTicket/OrleansTicket/Controllers/ApiController.cs",
                 "region": {
-                  "startLine": 46,
-                  "startColumn": 26,
-                  "endLine": 46,
-                  "endColumn": 38
+                  "startLine": 93,
+                  "startColumn": 36,
+                  "endLine": 93,
+                  "endColumn": 86
                 }
               }
             }
@@ -2851,6 +2715,132 @@
           "ruleId": "CA2254",
           "level": "note",
           "message": "The logging message template should not vary between calls to 'LoggerExtensions.LogInformation(ILogger, string?, params object?[])'",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/mkuczynski11/Desktop/magisterka/repos/OrleansTicket/OrleansTicket/Controllers/ApiController.cs",
+                "region": {
+                  "startLine": 93,
+                  "startColumn": 36,
+                  "endLine": 93,
+                  "endColumn": 86
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2629",
+          "level": "warning",
+          "message": "Don't use string interpolation in logging message templates.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/mkuczynski11/Desktop/magisterka/repos/OrleansTicket/OrleansTicket/Controllers/ApiController.cs",
+                "region": {
+                  "startLine": 104,
+                  "startColumn": 36,
+                  "endLine": 104,
+                  "endColumn": 60
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA2254",
+          "level": "note",
+          "message": "The logging message template should not vary between calls to 'LoggerExtensions.LogInformation(ILogger, string?, params object?[])'",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/mkuczynski11/Desktop/magisterka/repos/OrleansTicket/OrleansTicket/Controllers/ApiController.cs",
+                "region": {
+                  "startLine": 104,
+                  "startColumn": 36,
+                  "endLine": 104,
+                  "endColumn": 60
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2629",
+          "level": "warning",
+          "message": "Don't use string interpolation in logging message templates.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/mkuczynski11/Desktop/magisterka/repos/OrleansTicket/OrleansTicket/Actors/Event.cs",
+                "region": {
+                  "startLine": 92,
+                  "startColumn": 36,
+                  "endLine": 92,
+                  "endColumn": 95
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2629",
+          "level": "warning",
+          "message": "Don't use string interpolation in logging message templates.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/mkuczynski11/Desktop/magisterka/repos/OrleansTicket/OrleansTicket/Controllers/ApiController.cs",
+                "region": {
+                  "startLine": 136,
+                  "startColumn": 36,
+                  "endLine": 136,
+                  "endColumn": 74
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA2254",
+          "level": "note",
+          "message": "The logging message template should not vary between calls to 'LoggerExtensions.LogInformation(ILogger, string?, params object?[])'",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/mkuczynski11/Desktop/magisterka/repos/OrleansTicket/OrleansTicket/Actors/Event.cs",
+                "region": {
+                  "startLine": 92,
+                  "startColumn": 36,
+                  "endLine": 92,
+                  "endColumn": 95
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2629",
+          "level": "warning",
+          "message": "Don't use string interpolation in logging message templates.",
           "locations": [
             {
               "resultFile": {
@@ -2860,27 +2850,6 @@
                   "startColumn": 36,
                   "endLine": 179,
                   "endColumn": 66
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CA2254",
-          "level": "note",
-          "message": "The logging message template should not vary between calls to 'LoggerExtensions.LogInformation(ILogger, string?, params object?[])'",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/Users/mkuczynski11/Desktop/magisterka/repos/OrleansTicket/OrleansTicket/Controllers/ApiController.cs",
-                "region": {
-                  "startLine": 195,
-                  "startColumn": 36,
-                  "endLine": 195,
-                  "endColumn": 72
                 }
               }
             }
@@ -2919,6 +2888,198 @@
               "resultFile": {
                 "uri": "file:///C:/Users/mkuczynski11/Desktop/magisterka/repos/OrleansTicket/OrleansTicket/Controllers/ApiController.cs",
                 "region": {
+                  "startLine": 179,
+                  "startColumn": 36,
+                  "endLine": 179,
+                  "endColumn": 66
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2629",
+          "level": "warning",
+          "message": "Don't use string interpolation in logging message templates.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/mkuczynski11/Desktop/magisterka/repos/OrleansTicket/OrleansTicket/Controllers/ApiController.cs",
+                "region": {
+                  "startLine": 120,
+                  "startColumn": 36,
+                  "endLine": 120,
+                  "endColumn": 67
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2629",
+          "level": "warning",
+          "message": "Don't use string interpolation in logging message templates.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/mkuczynski11/Desktop/magisterka/repos/OrleansTicket/OrleansTicket/Actors/Event.cs",
+                "region": {
+                  "startLine": 174,
+                  "startColumn": 36,
+                  "endLine": 174,
+                  "endColumn": 118
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA2254",
+          "level": "note",
+          "message": "The logging message template should not vary between calls to 'LoggerExtensions.LogInformation(ILogger, string?, params object?[])'",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/mkuczynski11/Desktop/magisterka/repos/OrleansTicket/OrleansTicket/Controllers/ApiController.cs",
+                "region": {
+                  "startLine": 120,
+                  "startColumn": 36,
+                  "endLine": 120,
+                  "endColumn": 67
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA1853",
+          "level": "note",
+          "message": "Do not guard 'Dictionary.Remove(key)' with 'Dictionary.ContainsKey(key)'",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/mkuczynski11/Desktop/magisterka/repos/OrleansTicket/OrleansTicket/Actors/Event.cs",
+                "region": {
+                  "startLine": 180,
+                  "startColumn": 17,
+                  "endLine": 180,
+                  "endColumn": 57
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/mkuczynski11/Desktop/magisterka/repos/OrleansTicket/OrleansTicket/Actors/Event.cs",
+                "region": {
+                  "startLine": 180,
+                  "startColumn": 13,
+                  "endLine": 183,
+                  "endColumn": 14
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/mkuczynski11/Desktop/magisterka/repos/OrleansTicket/OrleansTicket/Actors/Event.cs",
+                "region": {
+                  "startLine": 182,
+                  "startColumn": 17,
+                  "endLine": 182,
+                  "endColumn": 53
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2629",
+          "level": "warning",
+          "message": "Don't use string interpolation in logging message templates.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/mkuczynski11/Desktop/magisterka/repos/OrleansTicket/OrleansTicket/Controllers/ApiController.cs",
+                "region": {
+                  "startLine": 147,
+                  "startColumn": 36,
+                  "endLine": 147,
+                  "endColumn": 97
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1481",
+          "level": "warning",
+          "message": "Remove the unused local variable 'eventInfo'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/mkuczynski11/Desktop/magisterka/repos/OrleansTicket/OrleansTicket/Controllers/ApiController.cs",
+                "region": {
+                  "startLine": 124,
+                  "startColumn": 21,
+                  "endLine": 124,
+                  "endColumn": 30
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2629",
+          "level": "warning",
+          "message": "Don't use string interpolation in logging message templates.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/mkuczynski11/Desktop/magisterka/repos/OrleansTicket/OrleansTicket/Controllers/ApiController.cs",
+                "region": {
+                  "startLine": 195,
+                  "startColumn": 36,
+                  "endLine": 195,
+                  "endColumn": 72
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA2254",
+          "level": "note",
+          "message": "The logging message template should not vary between calls to 'LoggerExtensions.LogInformation(ILogger, string?, params object?[])'",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/mkuczynski11/Desktop/magisterka/repos/OrleansTicket/OrleansTicket/Controllers/ApiController.cs",
+                "region": {
                   "startLine": 147,
                   "startColumn": 36,
                   "endLine": 147,
@@ -2940,10 +3101,136 @@
               "resultFile": {
                 "uri": "file:///C:/Users/mkuczynski11/Desktop/magisterka/repos/OrleansTicket/OrleansTicket/Actors/Event.cs",
                 "region": {
+                  "startLine": 174,
+                  "startColumn": 36,
+                  "endLine": 174,
+                  "endColumn": 118
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA2254",
+          "level": "note",
+          "message": "The logging message template should not vary between calls to 'LoggerExtensions.LogInformation(ILogger, string?, params object?[])'",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/mkuczynski11/Desktop/magisterka/repos/OrleansTicket/OrleansTicket/Controllers/ApiController.cs",
+                "region": {
+                  "startLine": 195,
+                  "startColumn": 36,
+                  "endLine": 195,
+                  "endColumn": 72
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2629",
+          "level": "warning",
+          "message": "Don't use string interpolation in logging message templates.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/mkuczynski11/Desktop/magisterka/repos/OrleansTicket/OrleansTicket/Actors/Event.cs",
+                "region": {
+                  "startLine": 128,
+                  "startColumn": 36,
+                  "endLine": 128,
+                  "endColumn": 88
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA2254",
+          "level": "note",
+          "message": "The logging message template should not vary between calls to 'LoggerExtensions.LogInformation(ILogger, string?, params object?[])'",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/mkuczynski11/Desktop/magisterka/repos/OrleansTicket/OrleansTicket/Actors/Event.cs",
+                "region": {
+                  "startLine": 128,
+                  "startColumn": 36,
+                  "endLine": 128,
+                  "endColumn": 88
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2245",
+          "level": "warning",
+          "message": "Make sure that using this pseudorandom number generator is safe here.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/mkuczynski11/Desktop/magisterka/repos/OrleansTicket/OrleansTicket/Actors/EventQuery.cs",
+                "region": {
+                  "startLine": 46,
+                  "startColumn": 26,
+                  "endLine": 46,
+                  "endColumn": 38
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2629",
+          "level": "warning",
+          "message": "Don't use string interpolation in logging message templates.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/mkuczynski11/Desktop/magisterka/repos/OrleansTicket/OrleansTicket/Actors/Event.cs",
+                "region": {
                   "startLine": 145,
                   "startColumn": 36,
                   "endLine": 145,
                   "endColumn": 116
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2629",
+          "level": "warning",
+          "message": "Don't use string interpolation in logging message templates.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/mkuczynski11/Desktop/magisterka/repos/OrleansTicket/OrleansTicket/Actors/Event.cs",
+                "region": {
+                  "startLine": 107,
+                  "startColumn": 36,
+                  "endLine": 107,
+                  "endColumn": 91
                 }
               }
             }
@@ -2965,6 +3252,27 @@
                   "startColumn": 36,
                   "endLine": 107,
                   "endColumn": 91
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA2254",
+          "level": "note",
+          "message": "The logging message template should not vary between calls to 'LoggerExtensions.LogInformation(ILogger, string?, params object?[])'",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/mkuczynski11/Desktop/magisterka/repos/OrleansTicket/OrleansTicket/Actors/Event.cs",
+                "region": {
+                  "startLine": 145,
+                  "startColumn": 36,
+                  "endLine": 145,
+                  "endColumn": 116
                 }
               }
             }
@@ -3116,7 +3424,7 @@
         "S101": {
           "id": "S101",
           "shortDescription": "Types should be named in PascalCase",
-          "fullDescription": "Shared naming conventions allow teams to collaborate efficiently. This rule checks whether or not type names are using PascalCase. To reduce noise, two consecutive upper case characters are allowed unless they form the whole type name. So, MyXClass is compliant, but XC on its own is not.",
+          "fullDescription": "Shared naming conventions allow teams to collaborate efficiently.",
           "defaultLevel": "warning",
           "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-101",
           "properties": {
@@ -3124,16 +3432,16 @@
             "isEnabledByDefault": true,
             "tags": [
               "C#",
-              "SonarWay",
               "MainSourceScope",
-              "TestSourceScope"
+              "TestSourceScope",
+              "SonarWay"
             ]
           }
         },
         "S107": {
           "id": "S107",
           "shortDescription": "Methods should not have too many parameters",
-          "fullDescription": "A long parameter list can indicate that a new structure should be created to wrap the numerous parameters or that the function is doing too many things.",
+          "fullDescription": "Methods with a long parameter list are difficult to use because maintainers must figure out the role of each parameter and keep track of their position.",
           "defaultLevel": "warning",
           "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-107",
           "properties": {
@@ -3141,16 +3449,16 @@
             "isEnabledByDefault": false,
             "tags": [
               "C#",
-              "SonarWay",
               "MainSourceScope",
-              "TestSourceScope"
+              "TestSourceScope",
+              "SonarWay"
             ]
           }
         },
         "S112": {
           "id": "S112",
-          "shortDescription": "General exceptions should never be thrown",
-          "fullDescription": "Throwing such general exceptions as Exception, SystemException, ApplicationException, IndexOutOfRangeException, NullReferenceException, OutOfMemoryException and ExecutionEngineException prevents calling methods from handling true, system-generated exceptions differently than application-generated errors. ",
+          "shortDescription": "General or reserved exceptions should never be thrown",
+          "fullDescription": "This rule raises an issue when a general or reserved exception is thrown.",
           "defaultLevel": "warning",
           "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-112",
           "properties": {
@@ -3158,15 +3466,15 @@
             "isEnabledByDefault": true,
             "tags": [
               "C#",
-              "SonarWay",
-              "MainSourceScope"
+              "MainSourceScope",
+              "SonarWay"
             ]
           }
         },
         "S1135": {
           "id": "S1135",
           "shortDescription": "Track uses of \"TODO\" tags",
-          "fullDescription": "TODO tags are commonly used to mark places where some more code is required, but which the developer wants to implement later.",
+          "fullDescription": "Developers often use TODO tags to mark areas in the code where additional work or improvements are needed but are not implemented immediately. However, these TODO tags sometimes get overlooked or forgotten, leading to incomplete or unfinished code. This rule aims to identify and address unattended TODO tags to ensure a clean and maintainable codebase. This description explores why this is a problem and how it can be fixed to improve the overall code quality.",
           "defaultLevel": "warning",
           "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-1135",
           "properties": {
@@ -3174,16 +3482,32 @@
             "isEnabledByDefault": true,
             "tags": [
               "C#",
-              "SonarWay",
               "MainSourceScope",
-              "TestSourceScope"
+              "TestSourceScope",
+              "SonarWay"
+            ]
+          }
+        },
+        "S1192": {
+          "id": "S1192",
+          "shortDescription": "String literals should not be duplicated",
+          "fullDescription": "Duplicated string literals make the process of refactoring complex and error-prone, as any change would need to be propagated on all occurrences.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-1192",
+          "properties": {
+            "category": "Minor Code Smell",
+            "isEnabledByDefault": false,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "SonarWay"
             ]
           }
         },
         "S125": {
           "id": "S125",
           "shortDescription": "Sections of code should not be commented out",
-          "fullDescription": "Programmers should not comment out code as it bloats programs and reduces readability.",
+          "fullDescription": "Commented-out code distracts the focus from the actual executed code. It creates a noise that increases maintenance code. And because it is never executed, it quickly becomes out of date and invalid.",
           "defaultLevel": "warning",
           "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-125",
           "properties": {
@@ -3191,16 +3515,16 @@
             "isEnabledByDefault": true,
             "tags": [
               "C#",
-              "SonarWay",
               "MainSourceScope",
-              "TestSourceScope"
+              "TestSourceScope",
+              "SonarWay"
             ]
           }
         },
         "S1481": {
           "id": "S1481",
           "shortDescription": "Unused local variables should be removed",
-          "fullDescription": "If a local variable is declared but not used, it is dead code and should be removed. Doing so will improve maintainability because developers will not wonder what the variable is used for.",
+          "fullDescription": "An unused local variable is a variable that has been declared but is not used anywhere in the block of code where it is defined. It is dead code, contributing to unnecessary complexity and leading to confusion when reading the code. Therefore, it should be removed from your code to maintain clarity and efficiency.",
           "defaultLevel": "warning",
           "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-1481",
           "properties": {
@@ -3208,9 +3532,9 @@
             "isEnabledByDefault": true,
             "tags": [
               "C#",
-              "SonarWay",
               "MainSourceScope",
-              "TestSourceScope"
+              "TestSourceScope",
+              "SonarWay"
             ]
           }
         },
@@ -3225,9 +3549,8 @@
             "isEnabledByDefault": true,
             "tags": [
               "C#",
-              "SonarWay",
               "MainSourceScope",
-              "NotConfigurable"
+              "SonarWay"
             ]
           }
         },
@@ -3242,16 +3565,31 @@
             "isEnabledByDefault": true,
             "tags": [
               "C#",
-              "SonarWay",
               "MainSourceScope",
-              "NotConfigurable"
+              "SonarWay"
+            ]
+          }
+        },
+        "S2629": {
+          "id": "S2629",
+          "shortDescription": "Logging templates should be constant",
+          "fullDescription": "Logging arguments should not require evaluation in order to avoid unnecessary performance overhead. When passing concatenated strings or string interpolations directly into a logging method, the evaluation of these expressions occurs every time the logging method is called, regardless of the log level. This can lead to inefficient code execution and increased resource consumption.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-2629",
+          "properties": {
+            "category": "Major Code Smell",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "SonarWay"
             ]
           }
         },
         "S2933": {
           "id": "S2933",
           "shortDescription": "Fields that are only assigned in the constructor should be \"readonly\"",
-          "fullDescription": "readonly fields can only be assigned in a class constructor. If a class has a field that's not marked readonly but is only set in the constructor, it could cause confusion about the field's intended use. To avoid confusion, such fields should be marked readonly to make their intended use explicit, and to prevent future maintainers from inadvertently changing their use.",
+          "fullDescription": "readonly fields can only be assigned in a class constructor. If a class has a field that’s not marked readonly but is only set in the constructor, it could cause confusion about the field’s intended use. To avoid confusion, such fields should be marked readonly to make their intended use explicit, and to prevent future maintainers from inadvertently changing their use.",
           "defaultLevel": "warning",
           "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-2933",
           "properties": {
@@ -3259,42 +3597,9 @@
             "isEnabledByDefault": true,
             "tags": [
               "C#",
-              "SonarWay",
               "MainSourceScope",
-              "TestSourceScope"
-            ]
-          }
-        },
-        "S3604": {
-          "id": "S3604",
-          "shortDescription": "Member initializer values should not be redundant",
-          "fullDescription": "Fields, properties and events can be initialized either inline or in the constructor. Initializing them inline and in the constructor at the same time is redundant; the inline initialization will be overridden.",
-          "defaultLevel": "warning",
-          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-3604",
-          "properties": {
-            "category": "Minor Code Smell",
-            "isEnabledByDefault": true,
-            "tags": [
-              "C#",
-              "SonarWay",
-              "MainSourceScope",
-              "TestSourceScope"
-            ]
-          }
-        },
-        "S3925": {
-          "id": "S3925",
-          "shortDescription": "\"ISerializable\" should be implemented correctly",
-          "fullDescription": "The ISerializable interface is the mechanism to control the type serialization process. If not implemented correctly this could result in an invalid serialization and hard to detect bugs.",
-          "defaultLevel": "warning",
-          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-3925",
-          "properties": {
-            "category": "Major Code Smell",
-            "isEnabledByDefault": true,
-            "tags": [
-              "C#",
-              "SonarWay",
-              "MainSourceScope"
+              "TestSourceScope",
+              "SonarWay"
             ]
           }
         },
@@ -3309,9 +3614,25 @@
             "isEnabledByDefault": true,
             "tags": [
               "C#",
-              "SonarWay",
               "MainSourceScope",
-              "TestSourceScope"
+              "TestSourceScope",
+              "SonarWay"
+            ]
+          }
+        },
+        "S6667": {
+          "id": "S6667",
+          "shortDescription": "Logging in a catch clause should pass the caught exception as a parameter.",
+          "fullDescription": "This rule raises an issue on logging calls inside a catch clause that does not pass the raised Exception.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-6667",
+          "properties": {
+            "category": "Minor Code Smell",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "SonarWay"
             ]
           }
         }
